@@ -9,7 +9,7 @@ mathjax: true
 
 ## Data types of `Mat`
 | Name | Data Type | Bit Size | Range | Other |
-|:--------:|--------|--------|:--------:|--------|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
 |`CV_8U`  | uchar / unsigned char | 8  | 0 ~ 255 | Default for image data |
 |`CV_8S`| char | 8  | -128 ~ 127 | |
 | `CV_16U` | ushort / unsigned short int | 16  | 0 ~ 65535 | unsigned short |
