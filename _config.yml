@@ -1,0 +1,23 @@
+# Site settings
+title: Yongtao Hu's blog
+email:
+description: "Keep it simple, and keep it real!"
+baseurl: ""
+url: "http://herohuyongtao.github.io"
+github_username: herohuyongtao
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - autolink
+    - tables
+    - with_toc_data
+    - html_toc
+    - strikethrough
+    - lax_spacing
+    - footnotes
+pygments: true
+permalink: pretty
