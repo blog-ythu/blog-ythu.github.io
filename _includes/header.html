@@ -21,12 +21,6 @@
         </svg>
       </a>
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
         <!-- add swiftype instant search -->
         <input type="text" class="st-default-search-input">
         <script type="text/javascript">
@@ -34,9 +28,15 @@
           (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
           e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
           })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
           _st('install','LzEwz2TKASeU5sz4dKSq','2.0.0');
         </script>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <!-- all the .md pages will be display here -->
+        {% for page in site.pages %}
+          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+        {% endfor %}
       </div>
     </nav>
 
