@@ -31,9 +31,9 @@
           _st('install','LzEwz2TKASeU5sz4dKSq','2.0.0');
         </script>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <!-- all the .md pages will be display here -->
+        <!-- all the .md pages of 'page' layout will be display here -->
         {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
