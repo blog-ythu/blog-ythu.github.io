@@ -7,8 +7,6 @@ date: 2013-12-27 11:00:00
 mathjax: true
 ---
 
-require "redcarpet"
-
 There are two ways in VC++ to call MATLAB:
 
 1. distribute MATLAB code into MATLAB independent C++ shared library. Refer to the [previous blog](http://blog-ythu.github.io/2012/04/29/mixed-programming-distribute-MATLAB/) for details.
@@ -18,7 +16,7 @@ There are two ways in VC++ to call MATLAB:
 ---
 This blog will focus on the second approach (also the easier one).
 
-content = <<-EOS
+[toc]
 
 ### Pre-work:
 - Install MATLAB: unlike the first method, make sure you have the whole MATLAB application installed in order to call MATLAB directly in VC++ (only MATLAB Compiler Runtime is needed for the first method). We will take **MATLAB-x64-R2013a** as an example (installed under `C:\Program Files\MATLAB\R2013a`).
@@ -51,8 +49,3 @@ content = <<-EOS
 
 ### Other Remarks:
 - Try to close the previous MATLAB window first (extra command window) if stuck at `engOpen(NULL)`.
-
-EOS
-
-renderer = Redcarpet::Render::HTML_TOC.new
-puts Redcarpet::Markdown.new(renderer, {}).render(content)
