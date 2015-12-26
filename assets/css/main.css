@@ -26,10 +26,6 @@ a:visited { color: #205caa; }
   position: fixed;
   bottom: 30px;
   margin-left: 1400px;
-  cursor: pointer;
-  z-index: 999999;
-  display: block;
-  opacity: 1;
 }
 #back-top a {
   width: 54px;
