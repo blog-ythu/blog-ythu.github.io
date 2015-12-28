@@ -13,7 +13,7 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
 (function($) {
-    var toggleHTML = '<div id="toctitle"><h2>%1</h2> <span class="toctoggle">[<a id="toctogglelink" class="internal" href="#">%2</a>]</span></div>';
+    var toggleHTML = '<div id="toctitle"><h3>%1</h3> <span class="toctoggle">[<a id="toctogglelink" class="internal" href="#">%2</a>]</span></div>';
     var tocContainerHTML = '<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td>%1<ul>%2</ul></td></tr></tbody></table></div>';
 
     function createLevelHTML(anchorId, tocLevel, tocSection, tocNumber, tocText, tocInner) {
@@ -49,12 +49,12 @@
 
         var tocContainer = $(this);
 
-        tocContainer.find('h1').each(function() {
+        tocContainer.find('h2').each(function() {
             var levelHTML = '';
             var innerSection = 0;
             var h1 = $(this);
 
-            h1.nextUntil('h1').filter('h2').each(function() {
+            h1.nextUntil('h2').filter('h3').each(function() {
                 ++innerSection;
                 var anchorId = config.anchorPrefix + tocLevel + '-' + tocSection + '-' +  + innerSection;
                 $(this).attr('id', anchorId);
