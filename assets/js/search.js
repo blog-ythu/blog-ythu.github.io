@@ -21,14 +21,12 @@ jQuery(function() {
   });
 
   // Event instantly
-  var tt = document.getElementById("site_search");
-  function checkIt() {
-      event.preventDefault();
-      var query = $("#search_box").val(); // Get the value for the text field
-      var results = window.idx.search(query); // Get lunr to perform a search
-      display_search_results(results); // Hand the results off to be displayed
-    }
-  tt.addEventListener("blur", checkIt , false);
+  $('#site_search').bind('input', function() {
+       event.preventDefault();
+       var query = $("#search_box").val(); // Get the value for the text field
+       var results = window.idx.search(query); // Get lunr to perform a search
+       display_search_results(results); // Hand the results off to be displayed
+  });
 
   function display_search_results(results) {
     var $search_results = $("#search_results");
