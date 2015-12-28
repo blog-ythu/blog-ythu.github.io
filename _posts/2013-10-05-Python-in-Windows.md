@@ -7,6 +7,9 @@ date: 2013-10-05 11:00:00
 mathjax: true
 ---
 
+<!-- add TOC here -->
+<div id="renderIn"></div>
+
 ## Setup Python environment in Windows: (using [Anaconda](http://continuum.io/downloads))
 1. Download Window's version [Anaconda](http://continuum.io/downloads).
 2. Install (e.g. default to folder `C:\Anaconda`).

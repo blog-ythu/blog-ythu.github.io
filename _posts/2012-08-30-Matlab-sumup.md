@@ -7,7 +7,8 @@ date: 2012-08-30 11:00:00
 mathjax: true
 ---
 
-[toc]
+<!-- add TOC here -->
+<div id="renderIn"></div>
 
 ## Get rect from mouse
 ```matlab

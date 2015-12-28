@@ -16,7 +16,8 @@ There are two ways in VC++ to call MATLAB:
 ---
 This blog will focus on the second approach (also the easier one).
 
-[toc]
+<!-- add TOC here -->
+<div id="renderIn"></div>
 
 ### Pre-work:
 - Install MATLAB: unlike the first method, make sure you have the whole MATLAB application installed in order to call MATLAB directly in VC++ (only MATLAB Compiler Runtime is needed for the first method). We will take **MATLAB-x64-R2013a** as an example (installed under `C:\Program Files\MATLAB\R2013a`).

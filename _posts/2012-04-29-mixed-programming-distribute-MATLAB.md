@@ -7,6 +7,9 @@ date: 2012-04-29 11:00:00
 mathjax: true
 ---
 
+<!-- add TOC here -->
+<div id="renderIn"></div>
+
 There are two ways in VC++ to call MATLAB:
 
 1. distribute MATLAB code into MATLAB independent C++ shared library.

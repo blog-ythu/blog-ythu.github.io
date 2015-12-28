@@ -9,7 +9,8 @@ mathjax: true
 
 Similar to [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/) makes it very easy to host your code. We all know that GitHub works great for open-source. However, you have to pay if you want to create private repositories. On the other hand, Bitbucket enables you to create unlimited free private repositories. This is an important reason why more and more people are using Bitbucket nowadays. In this post, I will show how to use Bitbucket to easily host your code (over [TortoiseHg](http://tortoisehg.bitbucket.org/) specifically).
 
-[TOC]
+<!-- add TOC here -->
+<div id="renderIn"></div>
 
 ## Setup Bitbucket over Internet
 1. Login `Bitbucket > Repositories > Create repository`.

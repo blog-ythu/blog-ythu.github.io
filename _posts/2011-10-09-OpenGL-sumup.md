@@ -7,7 +7,8 @@ date: 2011-10-09 11:00:00
 mathjax: true
 ---
 
-[TOC]
+<!-- add TOC here -->
+<div id="renderIn"></div>
 
 ## Setup
 Please refer to [here](https://bitbucket.org/herohuyongtao/opengl-setup) on how to setup OpenGL.

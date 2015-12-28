@@ -7,6 +7,9 @@ date: 2012-04-06 11:00:00
 mathjax: true
 ---
 
+<!-- add TOC here -->
+<div id="renderIn"></div>
+
 ## Upgrade the structure of all files in current folder (including sub-folders and sub-sub-folders...) by one level
 ```bat
 for /r %x in (*.*) do move "%x" "%x"/../..

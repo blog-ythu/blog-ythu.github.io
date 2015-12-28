@@ -7,6 +7,9 @@ date: 2014-09-25 11:00:00
 mathjax: true
 ---
 
+<!-- add TOC here -->
+<div id="renderIn"></div>
+
 ## CMakeLists.txt for Lib project:
 ```cmake
 # add path of headers to include_directories

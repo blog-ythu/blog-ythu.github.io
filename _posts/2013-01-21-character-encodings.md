@@ -7,6 +7,9 @@ date: 2013-01-21 11:00:00
 mathjax: true
 ---
 
+<!-- add TOC here -->
+<div id="renderIn"></div>
+
 A text file can be encoded in many different [character encodings](http://en.wikipedia.org/wiki/Character_encoding). There are many [encoding variations](http://en.wikipedia.org/wiki/Windows_code_page) even just for Windows system. Special attention has to be given when handling text files with different character encodings, e.g. if we use `fstream`'s `getline()` to read from a text file (contains Chinese) in `UTF-8`, we will get gibberish characters, while will be correct if the text file is in `ANSI`.
 
 In this post, given a text file, I will show how to get its character encoding and how to convert it from one character encoding to another (has been integrated in [useful functions](https://bitbucket.org/herohuyongtao/useful-functions)).

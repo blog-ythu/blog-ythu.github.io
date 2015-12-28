@@ -7,7 +7,8 @@ date: 2011-11-15 11:00:00
 mathjax: true
 ---
 
-[TOC]
+<!-- add TOC here -->
+<div id="renderIn"></div>
 
 ## 3D face (facial expressions) databases
 - [Bosphorus database (face & hand)](http://bosphorus.ee.boun.edu.tr/)
@@ -42,7 +43,7 @@ mathjax: true
     	- [Visual Object Tracking (VOT) challenge](http://www.votchallenge.net/)
     	- [13 CVPR - Online Object Tracking: A Benchmark](http://visual-tracking.net/)
     	- [13 ICCV - Tracking Revisited using RGBD Camera: Unified Benchmark and Baselines](http://tracking.cs.princeton.edu/eval.php)
-		
+
 	    > Deep Learning based trackers:
 	    > - 15 ICML - Online Tracking by Learning Discriminative Saliency Map with Convolutional Neural Network
 	    > - 15 arXiv - Learning Multi-Domain Convolutional Neural Networks for Visual Tracking

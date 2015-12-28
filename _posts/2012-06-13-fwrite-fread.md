@@ -7,6 +7,9 @@ date: 2012-06-13 11:00:00
 mathjax: true
 ---
 
+<!-- add TOC here -->
+<div id="renderIn"></div>
+
 We use `fwrite` to write formated data to disk and use `fread` to later read them back from disk. Different data types are very different in using `fwrite/fread`. The following shows how to do for `vector` (simple), `Mat`, `vector<Mat>`, `struct` (simple), `struct` (complex).
 
 ## for `vector` (simple):

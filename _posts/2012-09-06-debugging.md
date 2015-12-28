@@ -7,7 +7,8 @@ date: 2012-09-06 11:00:00
 mathjax: true
 ---
 
-[TOC]
+<!-- add TOC here -->
+<div id="renderIn"></div>
 
 ## Can not find dxtrans.h in DirectX programming
 cc: http://blog.csdn.net/clever101/article/details/5617982
