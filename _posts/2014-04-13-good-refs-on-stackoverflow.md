@@ -7,6 +7,9 @@ date: 2014-04-13 11:00:00
 mathjax: true
 ---
 
+<!-- add TOC here -->
+<div id="renderIn"></div>
+
 ## C
 - [everything is pass-by-value](http://denniskubes.com/2012/08/20/is-c-pass-by-value-or-reference/)
 - [cannot declare functions inside `struct`](http://stackoverflow.com/a/21950708/2589776)
