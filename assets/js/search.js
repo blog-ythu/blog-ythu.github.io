@@ -20,7 +20,7 @@ jQuery(function() {
     });
   });
 
-  // Event instantly
+  // Event instantly whenever search input changes
   $('#site_search').bind('input', function() {
        event.preventDefault();
        var query = $("#search_box").val(); // Get the value for the text field
