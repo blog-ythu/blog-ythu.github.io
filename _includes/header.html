@@ -21,8 +21,21 @@
         </svg>
       </a>
       <div class="trigger">
+          <!-- add lunr.js instant search -->
+          <form action="get" id="site_search">
+            <label for="search_box">Search</label><input type="text" id="search_box">
+            <input type="submit" value="search">
+          </form>
+
+          <script src="/assets/js/lunr.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script src="/assets/js/search.js"></script>
+
+          <ul id="search_results"></ul>
+
+          
         <!-- add swiftype instant search -->
-        <input type="text" class="st-default-search-input">
+        <!-- <input type="text" class="st-default-search-input"> -->
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
