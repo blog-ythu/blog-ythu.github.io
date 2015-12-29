@@ -19,7 +19,7 @@ This blog will focus on the second approach (also the easier one).
 <!-- add TOC here -->
 <div id="renderIn"></div>
 
-### Pre-work:
+## Pre-work:
 - Install MATLAB: unlike the first method, make sure you have the whole MATLAB application installed in order to call MATLAB directly in VC++ (only MATLAB Compiler Runtime is needed for the first method). We will take **MATLAB-x64-R2013a** as an example (installed under `C:\Program Files\MATLAB\R2013a`).
 - **Platform consistence:** ***the platforms of MATLAB and VC++ compile platform must be the same***, i.e. Win32/x86 VC\++ compile platform can only use x86 MATLAB and x64 VC\++ compile platform can only use x64 MATLAB.
 - Example: take the following example `myadd2.m` (assume under `C:\`):
@@ -33,7 +33,7 @@ This blog will focus on the second approach (also the easier one).
 	end
 	```
 
-### VC setup:
+## VC setup:
 1. Add MATLAB include folder to project `Include` files: i.e. `C:\Program Files\MATLAB\R2013a\extern\include`
 2. Add MATLAB library folder to project `Library` files: i.e. `C:\Program Files\MATLAB\R2013a\extern\lib\win64\microsoft`
 3. Add relevant libraries to `Linker>Input>Additional Dependencies`: `libmx.lib libeng.lib`
@@ -48,5 +48,5 @@ This blog will focus on the second approach (also the easier one).
     - gray-scale image
     - RGB image
 
-### Other Remarks:
+## Other Remarks:
 - Try to close the previous MATLAB window first (extra command window) if stuck at `engOpen(NULL)`.
