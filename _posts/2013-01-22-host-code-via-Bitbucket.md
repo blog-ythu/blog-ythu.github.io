@@ -125,6 +125,8 @@ If you want to pull all the content of sub-repos to the main repo, follow the st
 
 3. Run `hg onsub "hg pull -u"` in console[^4].
 
+> Note: You must revert anything done to the sub-repo when pushing changes to the main repo, though you can modify it to fit your needs during development.
+
 [^1]: Link to most-recent version of static file: https://bitbucket.org/site/master/issue/3769/link-to-most-recent-version-of-static-file.
 [^2]: Delete all local changesets and revert to tree: http://stackoverflow.com/a/2143711/2589776.
 [^3]: Getting Started With Mercurial Subrepositories: https://tomtech999.wordpress.com/2011/12/17/getting-started-with-mercurial-subrepositories/.
