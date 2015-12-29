@@ -8,7 +8,7 @@ mathjax: true
 ---
 
 <!-- add TOC here -->
-<div id="renderIn"></div>
+<div id="genTocHere"></div>
 
 ## CMakeLists.txt for Lib project:
 ```cmake

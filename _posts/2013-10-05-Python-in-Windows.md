@@ -8,7 +8,7 @@ mathjax: true
 ---
 
 <!-- add TOC here -->
-<div id="renderIn"></div>
+<div id="genTocHere"></div>
 
 ## Setup Python environment in Windows: (using [Anaconda](http://continuum.io/downloads))
 1. Download Window's version [Anaconda](http://continuum.io/downloads).

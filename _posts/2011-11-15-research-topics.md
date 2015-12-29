@@ -8,7 +8,7 @@ mathjax: true
 ---
 
 <!-- add TOC here -->
-<div id="renderIn"></div>
+<div id="genTocHere"></div>
 
 ## 3D face (facial expressions) databases
 - [Bosphorus database (face & hand)](http://bosphorus.ee.boun.edu.tr/)
@@ -84,7 +84,7 @@ mathjax: true
 ### Other Local Feature Detectors and Descriptors
 - [VGG Affine Covariant features](http://www.robots.ox.ac.uk/~vgg/research/affine/) – Oxford code for various affine covariant feature detectors and descriptors
 - [LIOP descriptor](http://zhwang.me/publication/liop/index.html) – Local Intensity Order Pattern (LIOP) descriptor
-- [Local Symmetry Features](http://www.cs.cornell.edu/projects/symfeat/) – matching of local symmetry features under large variations in lighting, age, and rendering style
+- [Local Symmetry Features](http://www.cs.cornell.edu/projects/symfeat/) – matching of local symmetry features under large variations in lighting, age, and genTocHereg style
 
 ### Global Image Descriptors
 - GIST: [MATLAB](http://people.csail.mit.edu/torralba/code/spatialenvelope/) | [C++](http://lear.inrialpes.fr/src/lear_gist-1.2.tgz) (Lear's version)

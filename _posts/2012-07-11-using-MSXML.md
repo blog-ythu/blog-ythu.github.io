@@ -12,7 +12,7 @@ In [previous post](http://blog-ythu.github.io/2012/06/18/using-Libxml2/), I talk
 In the followings, I will show how to use MSXML to read/write xml files.
 
 <!-- add TOC here -->
-<div id="renderIn"></div>
+<div id="genTocHere"></div>
 
 ## Pre-work:
 - To install MSXML is quite easy, you just need to install Windows SDK, where it is integrated.

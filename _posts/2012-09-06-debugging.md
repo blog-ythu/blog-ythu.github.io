@@ -8,7 +8,7 @@ mathjax: true
 ---
 
 <!-- add TOC here -->
-<div id="renderIn"></div>
+<div id="genTocHere"></div>
 
 ## Can not find dxtrans.h in DirectX programming
 cc: http://blog.csdn.net/clever101/article/details/5617982

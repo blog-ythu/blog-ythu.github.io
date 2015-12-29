@@ -8,7 +8,7 @@ mathjax: true
 ---
 
 <!-- add TOC here -->
-<div id="renderIn"></div>
+<div id="genTocHere"></div>
 
 ## Setup
 Please refer to [here](https://bitbucket.org/herohuyongtao/opengl-setup) on how to setup OpenGL.

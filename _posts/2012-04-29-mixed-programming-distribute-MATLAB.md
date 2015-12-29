@@ -21,7 +21,7 @@ Distributing MATLAB code into C\++ libraries will enable us to call MATLAB in C\
 In the following, I will show you how you can do this step by step.
 
 <!-- add TOC here -->
-<div id="renderIn"></div>
+<div id="genTocHere"></div>
 
 ## Pre-work:
 Take the following MATLAB function `myadd2.m` as an example, from which we want to generate MATLAB independent C++ shared library.

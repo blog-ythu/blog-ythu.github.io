@@ -8,7 +8,7 @@ mathjax: true
 ---
 
 <!-- add TOC here -->
-<div id="renderIn"></div>
+<div id="genTocHere"></div>
 
 ## Upgrade the structure of all files in current folder (including sub-folders and sub-sub-folders...) by one level
 ```bat

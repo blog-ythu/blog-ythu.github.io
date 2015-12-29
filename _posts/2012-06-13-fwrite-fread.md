@@ -8,7 +8,7 @@ mathjax: true
 ---
 
 <!-- add TOC here -->
-<div id="renderIn"></div>
+<div id="genTocHere"></div>
 
 We use `fwrite` to write formated data to disk and use `fread` to later read them back from disk. Different data types are very different in using `fwrite/fread`. The following shows how to do for `vector` (simple), `Mat`, `vector<Mat>`, `struct` (simple), `struct` (complex).
 

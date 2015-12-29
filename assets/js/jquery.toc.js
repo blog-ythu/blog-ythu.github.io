@@ -30,7 +30,7 @@
 
     $.fn.toc = function(settings) {
         var config = {
-            renderIn: 'self',
+            genTocHere: 'self',
             anchorPrefix: 'tocAnchor-',
             showAlways: false,
             saveShowStatus: true,
@@ -97,8 +97,8 @@
                 .replace('%2', tocHTML);
 
             // Renders in default or specificed path
-            if (config.renderIn != 'self') {
-              $(config.renderIn).html(replacedTocContainer);
+            if (config.genTocHere != 'self') {
+              $(config.genTocHere).html(replacedTocContainer);
             } else {
               tocContainer.prepend(replacedTocContainer);
             }
