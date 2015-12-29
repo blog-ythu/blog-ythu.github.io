@@ -69,13 +69,25 @@ target_link_libraries(${PROJECT_NAME}${OpenCV_LIBS})
 	- `source_group(<name> FILES <src>...)` (use `${SOURCES}` for  files list defined earlier), or
 	- `source_group(<name> REGULAR_EXPRESSION <regex>)` (e.g. use `.*..*` for normal `*.*`)
 3. Link different libraries for Debug and Release mode:
+
     ```cmake
     target_link_libraries(testProj
         debug -path-to-debug-lib-/lib_debug.lib
 		optimized -path-to-release-lib-/lib.lib
     )
     ```
+3. Check build target is Win32 or Win64:
+
+	```cmake
+	string(REGEX MATCH "Win64" ISWIN64 ${CMAKE_GENERATOR})
+	if("${ISWIN64}" STREQUAL "Win64")
+		# is Win64...
+	else("${ISWIN64}" STREQUAL "Win64")
+		# is Win32...
+	endif("${ISWIN64}" STREQUAL "Win64")
+	```
 2. CMake for setting highest warning level can be:
+
     ```cmake
     # set highest warnings level, and treat them as errors
     if(MSVC)
@@ -99,6 +111,7 @@ target_link_libraries(${PROJECT_NAME}${OpenCV_LIBS})
     endif()
     ```
 2. Enable OpenMP:
+
 	```cmake
 	# enable openmp
 	find_package(OpenMP)
