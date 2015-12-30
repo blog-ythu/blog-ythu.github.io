@@ -144,3 +144,6 @@ void change_text_file_encoding_from_UTF8_without_BOM_to_ANSI(const char* filenam
     outfile.close();
 }
 ```
+
+## References
+1. What Every Programmer Absolutely, Positively Needs To Know About Encodings And Character Sets To Work With Text: http://kunststube.net/encoding/
