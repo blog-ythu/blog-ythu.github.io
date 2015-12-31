@@ -118,7 +118,7 @@ CMake for setting highest warning level can be:
     endif()
     ```
 
-### Enable OpenMP:
+### Enable OpenMP
 
 	```cmake
 	# enable openmp
