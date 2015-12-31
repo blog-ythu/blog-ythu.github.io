@@ -69,8 +69,8 @@ target_link_libraries(${PROJECT_NAME}${OpenCV_LIBS})
 
 ### Group files
 To group source files in VS (e.g. put given source files into new folder under VS), use
-	- `source_group(<name> FILES <src>...)` (use `${SOURCES}` for  files list defined earlier), or
-	- `source_group(<name> REGULAR_EXPRESSION <regex>)` (e.g. use `.*..*` for normal `*.*`)
+- `source_group(<name> FILES <src>...)` (use `${SOURCES}` for  files list defined earlier), or
+- `source_group(<name> REGULAR_EXPRESSION <regex>)` (e.g. use `.*..*` for normal `*.*`)
 
 ### Different libs for Debug/Release
 ```cmake
@@ -149,4 +149,4 @@ For copying all needed data files to binary dir (when `cmake`), there are two wa
 	file(COPY ${files_needed} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 	```
 
-	The difference is that: the first method **only copy the listed files** to the binary dir **without directory structure**, while the second will **copy all the files in these folders**, as well as **with directory structure** (only the least parent will retain), i.e. there will be three folders named `test-data`, `models` and `-matlab-` in the binary dir after copying.
+The difference is that: the first method **only copy the listed files** to the binary dir **without directory structure**, while the second will **copy all the files in these folders**, as well as **with directory structure** (only the least parent will retain), i.e. there will be three folders named `test-data`, `models` and `-matlab-` in the binary dir after copying.
