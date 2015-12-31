@@ -73,83 +73,80 @@ To group source files in VS (e.g. put given source files into new folder under V
 	- `source_group(<name> REGULAR_EXPRESSION <regex>)` (e.g. use `.*..*` for normal `*.*`)
 
 ### Different libs for Debug/Release
-
-    ```cmake
-    target_link_libraries(testProj
-        debug -path-to-debug-lib-/lib_debug.lib
-		optimized -path-to-release-lib-/lib.lib
-    )
-    ```
+```cmake
+target_link_libraries(testProj
+    debug -path-to-debug-lib-/lib_debug.lib
+	optimized -path-to-release-lib-/lib.lib
+)
+```
 
 ### Check build target is Win32/64
-
-	```cmake
-	string(REGEX MATCH "Win64" ISWIN64 ${CMAKE_GENERATOR})
-	if("${ISWIN64}" STREQUAL "Win64")
-		# is Win64...
-	else("${ISWIN64}" STREQUAL "Win64")
-		# is Win32...
-	endif("${ISWIN64}" STREQUAL "Win64")
-	```
+```cmake
+string(REGEX MATCH "Win64" ISWIN64 ${CMAKE_GENERATOR})
+if("${ISWIN64}" STREQUAL "Win64")
+	# is Win64...
+else("${ISWIN64}" STREQUAL "Win64")
+	# is Win32...
+endif("${ISWIN64}" STREQUAL "Win64")
+```
 
 ### Set warning level
 CMake for setting highest warning level can be:
 
-    ```cmake
-    # set highest warnings level, and treat them as errors
-    if(MSVC)
-        # c++
-        if(CMAKE_CXX_FLAGS MATCHES "/W[0-4]")
-            string(REGEX REPLACE "/W[0-4]" "/W4 /WX" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
-        else()
-            set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4 /WX")
-        endif()
-
-        # c
-        if(CMAKE_C_FLAGS MATCHES "/W[0-4]")
-            string(REGEX REPLACE "/W[0-4]" "/W4 /WX" CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
-        else()
-            set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /W4 /WX")
-        endif()
-    elseif(CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -Wconversion -Wno-long-long -pedantic")
-    elseif(CMAKE_COMPILER_IS_GNUC)
-        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -Wconversion -Wno-long-long -pedantic")
+```cmake
+# set highest warnings level, and treat them as errors
+if(MSVC)
+    # c++
+    if(CMAKE_CXX_FLAGS MATCHES "/W[0-4]")
+        string(REGEX REPLACE "/W[0-4]" "/W4 /WX" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+    else()
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4 /WX")
     endif()
-    ```
+
+    # c
+    if(CMAKE_C_FLAGS MATCHES "/W[0-4]")
+        string(REGEX REPLACE "/W[0-4]" "/W4 /WX" CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
+    else()
+        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /W4 /WX")
+    endif()
+elseif(CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -Wconversion -Wno-long-long -pedantic")
+elseif(CMAKE_COMPILER_IS_GNUC)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -Wconversion -Wno-long-long -pedantic")
+endif()
+```
 
 ### Enable OpenMP
-
-	```cmake
-	# enable openmp
-	find_package(OpenMP)
-	if (OPENMP_FOUND)
-		set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
-		set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
-	endif()
-	```
+```cmake
+# enable openmp
+find_package(OpenMP)
+if (OPENMP_FOUND)
+	set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+	set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+endif()
+```
 
 ### Copy files
 For copying all needed data files to binary dir (when `cmake`), there are two ways:
-	- List all the files, e.g.,
+- List all the files, e.g.,
 
-		```cmake
-		file(GLOB files_needed
-			test/test-data/*.*
-			lib/-external-lib-/models/*.dat
-			lib/-matlab-/*.m
-		)
-		file(COPY ${files_needed} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-		```
-	- List only the folders that contain the data, e.g.,
+	```cmake
+	file(GLOB files_needed
+		test/test-data/*.*
+		lib/-external-lib-/models/*.dat
+		lib/-matlab-/*.m
+	)
+	file(COPY ${files_needed} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+	```
+- List only the folders that contain the data, e.g.,
 
-		```cmake
-		file(GLOB files_needed
-			test/test-data
-			lib/-external-lib-/models
-			lib/-matlab-
-		)
-		file(COPY ${files_needed} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-		```
+	```cmake
+	file(GLOB files_needed
+		test/test-data
+		lib/-external-lib-/models
+		lib/-matlab-
+	)
+	file(COPY ${files_needed} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+	```
 
 	The difference is that: the first method **only copy the listed files** to the binary dir **without directory structure**, while the second will **copy all the files in these folders**, as well as **with directory structure** (only the least parent will retain), i.e. there will be three folders named `test-data`, `models` and `-matlab-` in the binary dir after copying.
