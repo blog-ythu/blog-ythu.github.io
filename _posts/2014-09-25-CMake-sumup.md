@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "CMake templates"
+title: "CMake sumup"
 excerpt: "With CMake, cross-platformed code is so easy."
 date: 2014-09-25 11:00:00
 mathjax: true
@@ -10,7 +10,7 @@ mathjax: true
 <!-- add TOC here -->
 <div id="genTocHere"></div>
 
-## CMakeLists.txt for Lib project:
+## CMakeLists.txt for Lib project
 ```cmake
 # add path of headers to include_directories
 include_directories(include)
@@ -28,7 +28,7 @@ target_link_libraries(mylib
 )
 ```
 
-## CMakeLists.txt for EXE project:
+## CMakeLists.txt for EXE project
 ```cmake
 # Set the minimum required version of cmake.
 cmake_minimum_required(VERSION 2.6)
@@ -62,13 +62,17 @@ add_definitions(${OPENCV_DEFINITIONS})
 target_link_libraries(${PROJECT_NAME}${OpenCV_LIBS})
 ```
 
-## Remarks:
-1. For **`add_executable()`**: actually there is no need to add headers here, but is essential to load them also in project view.
-2. To use name that contains spaces, use `\` before spaces to escape them.
-3. To group source files in VS (e.g. put given source files into new folder under VS), use
+## Remarks
+### Source files
+- For **`add_executable()`**: actually there is no need to add headers here, but is essential to load them also in project view.
+- To use name that contains spaces, use `\` before spaces to escape them.
+
+### Group files
+To group source files in VS (e.g. put given source files into new folder under VS), use
 	- `source_group(<name> FILES <src>...)` (use `${SOURCES}` for  files list defined earlier), or
 	- `source_group(<name> REGULAR_EXPRESSION <regex>)` (e.g. use `.*..*` for normal `*.*`)
-3. Link different libraries for Debug and Release mode:
+
+### Different libs for Debug/Release
 
     ```cmake
     target_link_libraries(testProj
@@ -76,7 +80,8 @@ target_link_libraries(${PROJECT_NAME}${OpenCV_LIBS})
 		optimized -path-to-release-lib-/lib.lib
     )
     ```
-3. Check build target is Win32 or Win64:
+
+### Check build target is Win32/64
 
 	```cmake
 	string(REGEX MATCH "Win64" ISWIN64 ${CMAKE_GENERATOR})
@@ -86,7 +91,9 @@ target_link_libraries(${PROJECT_NAME}${OpenCV_LIBS})
 		# is Win32...
 	endif("${ISWIN64}" STREQUAL "Win64")
 	```
-2. CMake for setting highest warning level can be:
+
+### Set warning level
+CMake for setting highest warning level can be:
 
     ```cmake
     # set highest warnings level, and treat them as errors
@@ -110,7 +117,8 @@ target_link_libraries(${PROJECT_NAME}${OpenCV_LIBS})
         set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -Wconversion -Wno-long-long -pedantic")
     endif()
     ```
-2. Enable OpenMP:
+
+### Enable OpenMP:
 
 	```cmake
 	# enable openmp
@@ -120,7 +128,9 @@ target_link_libraries(${PROJECT_NAME}${OpenCV_LIBS})
 		set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 	endif()
 	```
-2. for copying all needed data files to binary dir (when `cmake`), there are two ways:
+
+### Copy files
+For copying all needed data files to binary dir (when `cmake`), there are two ways:
 	- List all the files, e.g.,
 
 		```cmake
