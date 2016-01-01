@@ -49,6 +49,8 @@ Based on above parameters, we can get:
 
 	$$ \begin{array}{l l} R11 &= cb \cdot cg \\\ R12 &= cg \cdot sa \cdot sb - ca \cdot sg \\\ R13 &= sa \cdot sg + ca \cdot cg \cdot sb  \end{array} $$
 
+	$$ \begin{pmatrix}{l l} R11 &= cb \cdot cg \\\ R12 &= cg \cdot sa \cdot sb - ca \cdot sg \\\ R13 &= sa \cdot sg + ca \cdot cg \cdot sb  $$
+
 	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image8.png)
 
 2. **Camera position (\\(C_{posx}\\), \\(C_{posy}\\), \\(C_{posz}\\)):**
