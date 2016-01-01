@@ -44,10 +44,8 @@ Based on above parameters, we can get:
 	$$
 		w \begin{pmatrix} u \\\ v \\\ 1 \end{pmatrix}
 		= Pc \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix}
-		= \begin{pmatrix} R11 & R12 & R13 & R14 \\\  R21 & R22 & R23 & R24 \\\  R31 & R32 & R33 & R34 \end{pmatrix} \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix} 
+		= \begin{pmatrix} R11 & R12 & R13 & R14 \\\  R21 & R22 & R23 & R24 \\\  R31 & R32 & R33 & R34 \end{pmatrix} \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix}
 	$$
-
-	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image5.png)
 
 	, where
 
@@ -74,9 +72,15 @@ Based on above parameters, we can get:
 		\end{array} \end{cases}
 	$$
 
-	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image8.png)
-
 2. **Camera position (\\(C_{posx}\\), \\(C_{posy}\\), \\(C_{posz}\\)):**
+
+	$$
+		\begin{cases} \begin{array}{l l}
+			Cposx &= -( tx \cdot R11 + ty \cdot R21 + tz \cdot R31 ) \\\
+			Cposy &= -( tx \cdot R12 + ty \cdot R22 + tz \cdot R32 ) \\\
+			Cposz &= -( tx \cdot R13 + ty \cdot R23 + tz \cdot R33 )
+		\end{array} \end{cases}
+	$$
 
 	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image9.png)
 
@@ -85,8 +89,21 @@ Based on above parameters, we can get:
 Meaning: 3D scene point \\((x,y,z) =>\\) 2D image pixel \\((u,v)\\). There need to be 4 steps to do this:
 
 1. **Convert from world coordinates to camera coordinates (\\(3D => 3D\\), i.e., \\((x,y,z)=>(xc,yc,zc)\\)):**
-![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image6.png)
+
+	$$
+		\begin{pmatrix} xc \\\ yc \\\ zc \end{pmatrix}
+		= Pc \cdot \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix}		
+	$$
+
+	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image6.png)
 2. **Convert from camera coordinates to undistorted sensor plane coordinates (\\(3D=>2D\\), i.e., \\((xc,yc,zc)=>(xu,yu)\\)):**
+
+	$$
+		\begin{cases} \begin{array}{l l}
+			xu &= \frac{f \cdot xc}{zc} \\\
+			yu &= \frac{f \cdot yc}{zc}
+		\end{array} \end{cases}
+	$$
 
 	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image71.png" style="width: 150px;"/>
 3. **Convert from undistorted to distorted sensor plane coordinates (\\(2D=>2D\\), i.e., \\((xu,yu)=>(xd,yd)\\))**, reference to the following function in PETS 2009’s calibration pragram:
@@ -95,6 +112,13 @@ Meaning: 3D scene point \\((x,y,z) =>\\) 2D image pixel \\((u,v)\\). There need 
 	void CameraModel::undistortedToDistortedSensorCoord (double Xu, double Yu, double& Xd, double& Yd)
 	```
 4. **Convert from distorted sensor plane coordinates to image coordinates (\\(2D=>2D\\), i.e., \\((xd,yd)=>(u,v)\\)):**
+
+	$$
+		\begin{cases} \begin{array}{l l}
+			u &= \frac{xd \cdot sx}{dpx} + cx \\\
+			v &= \frac{yd}{dpy} + cy \\\
+		\end{array} \end{cases}
+	$$
 
 	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image72.png" style="width: 180px;"/>
 
@@ -112,11 +136,40 @@ The idea is that we anti-project to the \\(3D\\) space (See following figure, \\
 
 1. **Convert from image coordinates to distorted sensor coordinates (\\(2D=>2D\\), i.e., \\((u1,v1)=>(xd1,yd1), (u2,v2)=>(xd2,yd2)\\)):**
 
+	$$
+		\begin{cases} \begin{array}{l l}
+			xd1 &= dpx \cdot \frac{u1 - cx1}{sx1} \\\
+			yd1 &= dpy \cdot (v1 - cy1) \\\
+			xd2 &= dpx \cdot \frac{u2 - cx2}{sx2} \\\
+			yd2 &= dpy \cdot (v2 - cy2)
+		\end{array} \end{cases}
+	$$
+
 	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image73.png" style="width: 250px;"/>
 2. **Convert from distorted sensor to undistorted sensor plane coordinates (\\(2D=>2D\\), i.e., \\((xd1,yd1)=>(xu1,yu1), (xd2,yd2)=>(xu2,yu2)\\)):**
 
+	$$
+		\begin{cases} \begin{array}{l l}
+			xu1 &= xd1 \cdot (1 + kappa11 \cdot (xd1 \cdot xd1 + yd1 \cdot yd1)) \\\
+			yu1 &= yd1 \cdot (1 + kappa11 \cdot (xd1 \cdot xd1 + yd1 \cdot yd1)) \\\
+			xu2 &= xd2 \cdot (1 + kappa12 \cdot (xd2 \cdot xd2 + yd2 \cdot yd2)) \\\
+			yu2 &= yd2 \cdot (1 + kappa12 \cdot (xd2 \cdot xd2 + yd2 \cdot yd2))
+		\end{array} \end{cases}
+	$$
+
 	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image77.png" style="width: 450px;"/>
 3. **Convert from undistorted sensor plane coordinates to camera coordinates (\\(2D=>3D\\), i.e., \\((xu1,yu1)=>(xc1,yc1,zc1), (xu1,yu1)=>(xc1,yc1,zc1)\\)):**
+
+	$$
+		\begin{cases} \begin{array}{l l}
+			xc1 &= xu1 \\\
+			yc1 &= yu1 \\\
+			zc1 &= f1 \\\
+			xc2 &= xu2 \\\
+			yc2 &= yu2 \\\
+			zc2 &= f2 \\\
+		\end{array} \end{cases}
+	$$
 
 	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image78.png" style="width: 120px;"/>
 
