@@ -41,7 +41,7 @@ Based on above parameters, we can get:
 
 	NOTE: Traditionally, we can obtain (u,v) by the following formula that is projected from 3D scene point (x,y,z). But we have to concern image distortion problem, thus, in practice, we often do this by 4 steps as shown in following **PART: World coordinates to image coordinates**.
 
-	$$ w \begin{pmatrix} u \\\ v \\\ 1 \end{pmatrix} = P_c \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix} = \begin{pmatrix} R11 R12 R13 R14 \\\  R21 R22 R23 R24 \\\  R31 R32 R33 R34 \end{pmatrix} \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix} $$
+	$$ w \begin{pmatrix} u \\\ v \\\ 1 \end{pmatrix} = Pc \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix} = \begin{pmatrix} R11 & R12 & R13 & R14 \\\  R21 & R22 & R23 & R24 \\\  R31 & R32 & R33 & R34 \end{pmatrix} \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix} $$
 
 	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image5.png)
 
