@@ -82,8 +82,6 @@ Based on above parameters, we can get:
 		\end{array} \end{cases}
 	$$
 
-	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image9.png)
-
 ## World coordinates to image coordinates (\\(3D=>2D\\), i.e., \\((x,y,z)=>(u,v)\\))
 
 Meaning: 3D scene point \\((x,y,z) =>\\) 2D image pixel \\((u,v)\\). There need to be 4 steps to do this:
@@ -95,7 +93,6 @@ Meaning: 3D scene point \\((x,y,z) =>\\) 2D image pixel \\((u,v)\\). There need 
 		= Pc \cdot \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix}		
 	$$
 
-	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image6.png)
 2. **Convert from camera coordinates to undistorted sensor plane coordinates (\\(3D=>2D\\), i.e., \\((xc,yc,zc)=>(xu,yu)\\)):**
 
 	$$
@@ -105,7 +102,6 @@ Meaning: 3D scene point \\((x,y,z) =>\\) 2D image pixel \\((u,v)\\). There need 
 		\end{array} \end{cases}
 	$$
 
-	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image71.png" style="width: 150px;"/>
 3. **Convert from undistorted to distorted sensor plane coordinates (\\(2D=>2D\\), i.e., \\((xu,yu)=>(xd,yd)\\))**, reference to the following function in PETS 2009’s calibration pragram:
 
 	```cpp
@@ -119,8 +115,6 @@ Meaning: 3D scene point \\((x,y,z) =>\\) 2D image pixel \\((u,v)\\). There need 
 			v &= \frac{yd}{dpy} + cy \\\
 		\end{array} \end{cases}
 	$$
-
-	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image72.png" style="width: 180px;"/>
 
 ## Image coordinates to world coordinates (\\(2D=>3D\\), i.e., \\((u,v)=>(x,y,z)\\))
 
@@ -145,7 +139,6 @@ The idea is that we anti-project to the \\(3D\\) space (See following figure, \\
 		\end{array} \end{cases}
 	$$
 
-	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image73.png" style="width: 250px;"/>
 2. **Convert from distorted sensor to undistorted sensor plane coordinates (\\(2D=>2D\\), i.e., \\((xd1,yd1)=>(xu1,yu1), (xd2,yd2)=>(xu2,yu2)\\)):**
 
 	$$
@@ -157,7 +150,6 @@ The idea is that we anti-project to the \\(3D\\) space (See following figure, \\
 		\end{array} \end{cases}
 	$$
 
-	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image77.png" style="width: 450px;"/>
 3. **Convert from undistorted sensor plane coordinates to camera coordinates (\\(2D=>3D\\), i.e., \\((xu1,yu1)=>(xc1,yc1,zc1), (xu1,yu1)=>(xc1,yc1,zc1)\\)):**
 
 	$$
@@ -170,8 +162,6 @@ The idea is that we anti-project to the \\(3D\\) space (See following figure, \\
 			zc2 &= f2 \\\
 		\end{array} \end{cases}
 	$$
-
-	<img src="https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image78.png" style="width: 120px;"/>
 
 	NOTE: Here assumed that image plane are between camera position and the scene, if are not, \\(zc\\) should be set to be \\(–f\\).
 4. **Convert from camera coordinates to world coordinates (\\(3D=>3D\\), i.e., \\((xc1,yc1,zc1)=>(x1,y1,z1), (xc2,yc2,zc2)=>(x2,y2,z2)\\)):** refer to the following function in PETS 2009’s calibration pragram:
