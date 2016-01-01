@@ -11,7 +11,7 @@ mathjax: true
 <div id="genTocHere"></div>
 
 ## CMakeLists.txt for Lib project
-{% highlight cmake linenos %}
+{% highlight cmake linenos=table %}
 # add path of headers to include_directories
 include_directories(include)
 
