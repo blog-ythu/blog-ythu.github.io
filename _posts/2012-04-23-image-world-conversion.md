@@ -47,6 +47,8 @@ Based on above parameters, we can get:
 
 	, where
 
+	$$ \left{ \begin{array}{l l} R11 = cb*cg \\\ R12 = cg*sa*sb-ca*sg  \end{array} $$
+
 	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image8.png)
 
 2. **Camera position (\\(C_{posx}\\), \\(C_{posy}\\), \\(C_{posz}\\)):**
