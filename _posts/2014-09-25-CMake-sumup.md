@@ -11,7 +11,7 @@ mathjax: true
 <div id="genTocHere"></div>
 
 ## CMakeLists.txt for Lib project
-```cmake
+{% highlight cmake linenos %}
 # add path of headers to include_directories
 include_directories(include)
 
@@ -26,7 +26,7 @@ add_library(mylib STATIC ${SOURCES})
 target_link_libraries(mylib
     -lib-name-.lib
 )
-```
+{% endhighlight %}
 
 ## CMakeLists.txt for EXE project
 ```cmake
