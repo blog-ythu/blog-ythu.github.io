@@ -41,13 +41,38 @@ Based on above parameters, we can get:
 
 	NOTE: Traditionally, we can obtain (u,v) by the following formula that is projected from 3D scene point (x,y,z). But we have to concern image distortion problem, thus, in practice, we often do this by 4 steps as shown in following **PART: World coordinates to image coordinates**.
 
-	$$ w \begin{pmatrix} u \\\ v \\\ 1 \end{pmatrix} = Pc \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix} = \begin{pmatrix} R11 & R12 & R13 & R14 \\\  R21 & R22 & R23 & R24 \\\  R31 & R32 & R33 & R34 \end{pmatrix} \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix} $$
+	$$
+		w \begin{pmatrix} u \\\ v \\\ 1 \end{pmatrix}
+		= Pc \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix}
+		= \begin{pmatrix} R11 & R12 & R13 & R14 \\\  R21 & R22 & R23 & R24 \\\  R31 & R32 & R33 & R34 \end{pmatrix} \cdot \lambda \begin{pmatrix} x \\\ y \\\ z \\\ 1 \end{pmatrix} 
+	$$
 
 	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image5.png)
 
 	, where
 
-	$$ \begin{cases} \begin{array}{l l} R11 &= cb \cdot cg \\\ R12 &= cg \cdot sa \cdot sb - ca \cdot sg \\\ R13 &= sa \cdot sg + ca \cdot cg \cdot sb  \end{array} \end{cases} $$
+	$$
+		\begin{cases} \begin{array}{l l}
+			R11 &= cb \cdot cg \\\
+			R12 &= cg \cdot sa \cdot sb - ca \cdot sg \\\
+			R13 &= sa \cdot sg + ca \cdot cg \cdot sb \\\
+			R14 &= tx \\\
+			R21 &= cb \cdot sg \\\
+			R22 &= sa \cdot sb \cdot sg + ca \cdot cg \\\
+			R23 &= ca \cdot sb \cdot sg - cg \cdot sa \\\
+			R24 &= ty \\\
+			R31 &= -sb \\\
+			R32 &= cb \cdot sa \\\
+			R33 &= ca \cdot cb \\\
+			R34 &= tz \\\
+			sa &= \sin(rx) \\\
+			ca &= \cos(rx) \\\
+			sb &= \sin(ry) \\\
+			cb &= \cos(ry) \\\
+			sg &= \sin(rz) \\\
+			cg &= \cos(rz)
+		\end{array} \end{cases}
+	$$
 
 	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image8.png)
 
