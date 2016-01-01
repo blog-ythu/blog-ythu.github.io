@@ -47,9 +47,7 @@ Based on above parameters, we can get:
 
 	, where
 
-	$$ \begin{array}{l l} R11 &= cb \cdot cg \\\ R12 &= cg \cdot sa \cdot sb - ca \cdot sg \\\ R13 &= sa \cdot sg + ca \cdot cg \cdot sb  \end{array} $$
-
-	$$ \begin{pmatrix}{l l} R11 &= cb \cdot cg \\\ R12 &= cg \cdot sa \cdot sb - ca \cdot sg \\\ R13 &= sa \cdot sg + ca \cdot cg \cdot sb  $$
+	$$ \begin{cases} \begin{array}{l l} R11 &= cb \cdot cg \\\ R12 &= cg \cdot sa \cdot sb - ca \cdot sg \\\ R13 &= sa \cdot sg + ca \cdot cg \cdot sb  \end{array} \end{cases} $$
 
 	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image8.png)
 
