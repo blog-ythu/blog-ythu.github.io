@@ -47,7 +47,7 @@ Based on above parameters, we can get:
 
 	, where
 
-	$$ \\{ \begin{array}{l l} R11 = cb*cg \\\ R12 = cg*sa*sb-ca*sg  \end{array} $$
+	$$ \\{ \begin{array}{l l} R11 = cb \cdot cg \\\ R12 = cg \cdot sa \cdot sb - ca \cdot sg \\\ R13 = sa \cdot sg + ca \cdot cg \cdot sb  \end{array} $$
 
 	![](https://bytebucket.org/herohuyongtao/blog-files/raw/tip/images/image8.png)
 
