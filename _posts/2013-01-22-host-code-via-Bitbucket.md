@@ -91,6 +91,13 @@ Use *teams* to group repos (only way currently). Issues can also be import/expor
     	```
 	2. Run `hg strip 'roots(outgoing())'` in console.
 
+### Copy changes from other commits
+This can be viewed as one kind of merging except that all files are updated to other commits. This is very useful when you want to update old `default` branch to one new `branch`.
+
+This can be done in the following steps:
+1. Set the current commit to which you want to be overwritten by other commits by right click $\rightarrow$ `Update...` $\rightarrow$ set the commit number.
+2. Select the commit that you want to copy changes from $\rightarrow$ right click $\rightarrow$ `Graft to Local...`.
+
 ### Ignore given files/folders
 - Ignore all its content under folder, simply add `-path-to-folder-/folderName/` to file `.hgignore`.
 - Ignore all its content under folder except given files or given sub-folders, add similar conent to file `.hgignore` (note that, unlike folders, files should end with `$`):
@@ -126,6 +133,7 @@ If you want to pull all the content of sub-repos to the main repo, follow the st
 3. Run `hg onsub "hg pull -u"` in console[^4].
 
 > Note: You must revert anything done to the sub-repo when pushing changes to the main repo, though you can modify it to fit your needs during development.
+
 
 [^1]: Link to most-recent version of static file: https://bitbucket.org/site/master/issue/3769/link-to-most-recent-version-of-static-file.
 [^2]: Delete all local changesets and revert to tree: http://stackoverflow.com/a/2143711/2589776.
