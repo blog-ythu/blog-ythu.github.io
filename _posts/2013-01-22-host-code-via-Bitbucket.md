@@ -94,9 +94,9 @@ Use *teams* to group repos (only way currently). Issues can also be import/expor
 ### Copy changes from other commits
 This can be viewed as one kind of merging except that all files are updated to other commits. This is very useful when you want to update old `default` branch to one new `branch`.
 
-This can be done in the following steps:
-1. Set the current commit to which you want to be overwritten by other commits by right click $\rightarrow$ `Update...` $\rightarrow$ set the commit number.
-2. Select the commit that you want to copy changes from $\rightarrow$ right click $\rightarrow$ `Graft to Local...`.
+This can be done in the following steps[^5]:
+1. Set the current commit to which you want to be overwritten by other commits by right click \\(\rightarrow\\) `Update...` \\(\rightarrow\\) set the commit number.
+2. Select the commit that you want to copy changes from \\(\rightarrow\\) right click \\(\rightarrow\\) `Graft to Local...`.
 
 ### Ignore given files/folders
 - Ignore all its content under folder, simply add `-path-to-folder-/folderName/` to file `.hgignore`.
@@ -139,3 +139,4 @@ If you want to pull all the content of sub-repos to the main repo, follow the st
 [^2]: Delete all local changesets and revert to tree: http://stackoverflow.com/a/2143711/2589776.
 [^3]: Getting Started With Mercurial Subrepositories: https://tomtech999.wordpress.com/2011/12/17/getting-started-with-mercurial-subrepositories/.
 [^4]: OnsubExtension: https://www.mercurial-scm.org/wiki/OnsubExtension.
+[^5]: Copy changes from other branches onto the current branch: https://selenic.com/hg/help/graft.
