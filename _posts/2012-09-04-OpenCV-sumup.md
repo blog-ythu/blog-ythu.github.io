@@ -65,7 +65,7 @@ mathjax: true
         uchar red = CV_IMAGE_ELEM(img, uchar, y, x*3+2);
         ```
 
-## Content transform between `Mat` row/col and `vector`
+## Content transform between Mat row/col and vector
 1. **`Mat` row/col to `Mat` row/col**
  cc: http://opencv.willowgarage.com/documentation/cpp/basic_structures.html
 
@@ -98,7 +98,21 @@ mathjax: true
     data_transpose.row(1).copyTo(p2);
     ```
 
-## About `CvBox2D`
+## About cv::Rect
+Note that, the top and left boundary of the rectangle are inclusive, while the right and bottom boundaries are not.
+
+- For `cv::Rect rect(x,y,w,h)`, its right bottom corner is `rect.br() = cv::Point(x+w, y+h)`, not `cv::Point(x+w-1, y+h-1)`.
+- To loop over an image ROI in OpenCV (where ROI is specified by `rect` ) is implemented as:
+
+```cpp
+for(int y = roi.y; y < roi.y + roi.height; y++) {
+    for(int x = roi.x; x < roi.x + roi.width; x++) {
+        // ...
+    }
+}
+```
+
+## About CvBox2D
 The definition of `CvBox2D` in OpenCV 2.1 is as follows:
 
 ```cpp
