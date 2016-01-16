@@ -10,7 +10,7 @@ mathjax: true
 <!-- add TOC here -->
 <div id="genTocHere"></div>
 
-## Data types of `Mat`
+## Data types of Mat
 | Name | Data Type | Bit Size | Range | Other |
 |:--------:|:--------:|:--------:|:--------:|:--------:|
 |`CV_8U`  | uchar / unsigned char | 8  | 0 ~ 255 | Default for image data |
@@ -101,16 +101,16 @@ mathjax: true
 ## About cv::Rect
 Note that, the top and left boundary of the rectangle are inclusive, while the right and bottom boundaries are not.
 
-- For `cv::Rect rect(x,y,w,h)`, its right bottom corner is `rect.br() = cv::Point(x+w, y+h)`, not `cv::Point(x+w-1, y+h-1)`.
+- For `cv::Rect rect(x,y,w,h)`, its right bottom corner is `rect.br() = cv::Point(x+w, y+h)`, not ~~`cv::Point(x+w-1, y+h-1)`~~.
 - To loop over an image ROI in OpenCV (where ROI is specified by `rect` ) is implemented as:
 
-```cpp
-for(int y = roi.y; y < roi.y + roi.height; y++) {
-    for(int x = roi.x; x < roi.x + roi.width; x++) {
-        // ...
+    ```cpp
+    for(int y = roi.y; y < roi.y + roi.height; y++) {
+        for(int x = roi.x; x < roi.x + roi.width; x++) {
+            // ...
+        }
     }
-}
-```
+    ```
 
 ## About CvBox2D
 The definition of `CvBox2D` in OpenCV 2.1 is as follows:
