@@ -32,7 +32,10 @@ mathjax: true
 	- [12 CVPR - Pedestrian detection at 100 frames per second](http://rodrigob.github.io/)
 
 ## Human Pose Estimation
-- [13 CVPR - Beyond Physical Connections: Tree Models in Human Pose Estimation](http://users.cecs.anu.edu.au/~yili/humanpose.html): with MATLAB code
+- Dataset and Benchmark
+	- [MPII Human Pose Dataset](http://human-pose.mpi-inf.mpg.de/)
+- Papers
+	- [13 CVPR - Beyond Physical Connections: Tree Models in Human Pose Estimation](http://users.cecs.anu.edu.au/~yili/humanpose.html): with MATLAB code
 
 ## Object tracking
 - Dataset and ground-truth
