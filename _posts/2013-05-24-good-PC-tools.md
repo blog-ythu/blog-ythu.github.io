@@ -8,7 +8,8 @@ mathjax: true
 ---
 
 - **Adobe Audition**: real-time multi-channel audio recording & audio editing
-- [**Atom**](https://atom.io/): advanced editor for structed code, w/ plugins like
+- [**Agent Ransack**](http://www.mythicsoft.com/agentransack/download): fast content search in files
+- [**Atom**](https://atom.io/): advanced editor for structured code, w/ plugins like
 	- **minimap**: preview enabled scroll bar
 	- **hightlight-line**: highlight current line
 	- **hightlight-selected**: highlight selected word when double clicking
