@@ -22,13 +22,19 @@ mathjax: true
 | `CV_64F` | double | 64  | \\(2.23\times10^{-308}\\) ~ \\(1.79\times10^{308}\\) ||
 
 ## Conversion between Mat and IplImage
-1. **`IplImage` to `Mat`**:
+1. **`IplImage *` to `Mat`**:
 
     ```cpp
     IplImage *ipl_img;
     Mat mat_img(ipl_img);
     ```
-2. **`Mat` to `IplImage`**:
+2. **`IplImage` to `Mat`**:
+
+    ```cpp
+    IplImage ipl_img;
+    Mat mat_img = cv::cvarrToMat(&ipl_img, true);
+    ```
+3. **`Mat` to `IplImage`**:
 
     ```cpp
     Mat mat_img;
