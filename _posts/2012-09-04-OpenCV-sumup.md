@@ -56,7 +56,7 @@ mathjax: true
         uchar green = intensity.val[1];
         uchar red = intensity.val[2];
         ```
-        Note: the same method can be used to change pixel intensities.
+ Note: the same method can be used to change pixel intensities.
 2. **`IplImage`** (e.g. `IplImage* img`)
  - **Grayscale**
 
