@@ -7,8 +7,8 @@ url: "http://herohuyongtao.github.io"
 github_username: herohuyongtao
 
 # Build settings
-markdown: kramdown
-kramdown:
+markdown: redcarpet
+redcarpet:
   extensions:
     - no_intra_emphasis
     - fenced_code_blocks
