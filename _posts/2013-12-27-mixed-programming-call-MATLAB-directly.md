@@ -25,12 +25,12 @@ This blog will focus on the second approach (also the easier one).
 - Example: take the following example `myadd2.m` (assume under `C:\`):
 
 	~~~ cpp
-	function [y, z] = myadd2(a, b)
-	% dummy function, just to demonstrate the idea
-	y = a+b;
-	z = a+2*b;
-	disp('Output from MATLAB.');
-	end
+		function [y, z] = myadd2(a, b)
+		% dummy function, just to demonstrate the idea
+		y = a+b;
+		z = a+2*b;
+		disp('Output from MATLAB.');
+		end
 	~~~
 
 ## VC setup:
