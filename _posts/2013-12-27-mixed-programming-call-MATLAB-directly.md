@@ -24,7 +24,7 @@ This blog will focus on the second approach (also the easier one).
 - **Platform consistence:** ***the platforms of MATLAB and VC++ compile platform must be the same***, i.e. Win32/x86 VC\++ compile platform can only use x86 MATLAB and x64 VC\++ compile platform can only use x64 MATLAB.
 - Example: take the following example `myadd2.m` (assume under `C:\`):
 
-	~~~
+	~~~ matlab
 	function [y, z] = myadd2(a, b)
 	% dummy function, just to demonstrate the idea
 	y = a+b;
@@ -32,7 +32,6 @@ This blog will focus on the second approach (also the easier one).
 	disp('Output from MATLAB.');
 	end
 	~~~
-	{: .language-matlab}
 
 ## VC setup:
 1. Add MATLAB include folder to project `Include` files: i.e. `C:\Program Files\MATLAB\R2013a\extern\include`

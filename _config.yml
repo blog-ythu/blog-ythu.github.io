@@ -8,5 +8,16 @@ github_username: herohuyongtao
 
 # Build settings
 markdown: kramdown
+kramdown:
+  extensions:
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - autolink
+    - tables
+    - with_toc_data
+    - html_toc
+    - strikethrough
+    - lax_spacing
+    - footnotes
 pygments: true
 permalink: pretty
