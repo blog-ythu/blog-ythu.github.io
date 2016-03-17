@@ -108,7 +108,7 @@ This can be done in the following steps[^5]:
     ```
 
 ### Sub-repos
-Subrepositories allow you to have a standalone repository included within a parent repository[^3].
+Subrepositories allow you to have a standalone repository included within a parent repository[^3] ([hg example](https://bitbucket.org/xixs/public) / [git example](https://github.com/willyd/caffe-windows-dependencies)).
 
 1. In the main repo, create file `.hgsub`.
 2. Add sub-repo mapping info in file `.hgsub` with format: `local_subrepo_path = external_repo_path` (where `local_subrepo_path` is relative to the root of your main repo). Suppose we want to add repo hosted at `https://me@bitbucket.org/me/subrepo` to folder `-path-to-main-repo-path-/libs/subrepo`, the content of file `.hgsub` will be like:
