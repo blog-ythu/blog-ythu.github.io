@@ -112,3 +112,6 @@ fileID = fopen('faces.txt', 'w');
 fprintf(fileID,'[%4.2f,%d,%d,%d]\n', x, y, z, t);
 fclose(fileID);
 ```
+
+## Functions with required and optional inputs
+Refer to http://www.mathworks.com/help/matlab/matlab_prog/parse-function-inputs.html.
