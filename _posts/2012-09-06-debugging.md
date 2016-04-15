@@ -28,6 +28,20 @@ E.g. after defining a constant: `#define A 1`, but in program, we mistaken using
 
 Solve: use `A` directly, not `int A`.
 
+## error C2146: syntax error : missing ';' before identifier 'PVOID64'
+In `winnt.h`, add the following line
+
+```cpp
+#define POINTER_64 __ptr64
+```
+
+before
+
+```cpp
+typedef void *PVOID;
+typedef void * POINTER_64 PVOID64;
+```
+
 ## error C2471: cannot update program database ---vc90.pdb
 `Project –> Properties –> C/C++ –> General –> Debug Information Format –> 'Disabled'`.
 
