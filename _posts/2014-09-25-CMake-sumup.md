@@ -116,11 +116,11 @@ elseif(CMAKE_COMPILER_IS_GNUC)
 endif()
 ```
 
-To disable specific warnings[^1]:
+To disable specific warnings[^1][^2]:
 
 ```cmake
-# disable warining C4819
-set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "/wd4819")
+add_definitions(-DNO_WARN_MBCS_MFC_DEPRECATION)  # disable MFC deprecation warnings
+set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "/wd4819 /wd4996")   # disable warining C4819 and C4996
 ```
 
 ### Enable OpenMP
@@ -159,3 +159,4 @@ For copying all needed data files to binary dir (when `cmake`), there are two wa
 The difference is that: the first method **only copy the listed files** to the binary dir **without directory structure**, while the second will **copy all the files in these folders**, as well as **with directory structure** (only the least parent will retain), i.e. there will be three folders named `test-data`, `models` and `-matlab-` in the binary dir after copying.
 
 [^1]: Using CMake to setup VS: http://blog.csdn.net/xum2008/article/details/7268761
+[^2]: Surpress MFC warnings: http://stackoverflow.com/a/25165654/2589776
