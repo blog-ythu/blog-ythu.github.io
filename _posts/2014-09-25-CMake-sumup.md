@@ -116,7 +116,7 @@ elseif(CMAKE_COMPILER_IS_GNUC)
 endif()
 ```
 
-To disable specific warnings[^1][^2]:
+To disable specific warnings[[^1]][[^2]]:
 
 ```cmake
 add_definitions(-DNO_WARN_MBCS_MFC_DEPRECATION)  # disable MFC deprecation warnings
