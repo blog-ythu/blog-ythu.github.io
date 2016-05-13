@@ -82,14 +82,15 @@ Use *teams* to group repos (only way currently). Issues can also be import/expor
 
 ### Delete local commits
 - If only need to delete last commit, `Repository > Rollback/Undo...`. This will keep changes in local.
-- If want to delete all local commits[^2] (this will also revert all changes):
-	1. Enable `mq` extension by adding the following to `mercurial.ini`:
+- If want to delete all local commits[^2]<sup>,</sup>[^6] (this will also revert all changes):
+	1. Enable `mq` extension by adding the following to `mercurial.ini` or enable it via `File > Settings > Extensions > mq`:
 
     	```ini
     	[extensions]
     	mq=
     	```
 	2. Run `hg strip 'roots(outgoing())'` in console.
+    > Note: it seems that this doesn't work for `graft` commits, in this case, just use `hg strip #changeset#`.
 
 ### Copy changes from other commits
 This can be viewed as one kind of merging except that all files are updated to other commits. This is very useful when you want to update old `default` branch to one new `branch`.
@@ -140,3 +141,4 @@ If you want to pull all the content of sub-repos to the main repo, follow the st
 [^3]: Getting Started With Mercurial Subrepositories: https://tomtech999.wordpress.com/2011/12/17/getting-started-with-mercurial-subrepositories/.
 [^4]: OnsubExtension: https://www.mercurial-scm.org/wiki/OnsubExtension.
 [^5]: Copy changes from other branches onto the current branch: https://selenic.com/hg/help/graft.
+[^6]: Is there any way to delete local commits in Mercurial?: http://stackoverflow.com/questions/2338986/is-there-any-way-to-delete-local-commits-in-mercurial
