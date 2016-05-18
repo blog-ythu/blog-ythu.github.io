@@ -90,6 +90,13 @@ else("${ISWIN64}" STREQUAL "Win64")
 endif("${ISWIN64}" STREQUAL "Win64")
 ```
 
+### Check VS version
+After this, `${Platform_VS}` will be, e.g. `vc12` for `Visual Studio 2013`.
+
+```cmake
+string(REGEX REPLACE ".*Visual Studio ([0-9][0-9]).*" "vc\\1" Platform_VS ${CMAKE_GENERATOR})
+```
+
 ### Set warning level
 CMake for setting highest warning level can be:
 
