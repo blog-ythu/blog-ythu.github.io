@@ -54,6 +54,8 @@ This blog will focus on the second approach (also the easier one).
 	- In DOS, go to MATLAB install folder that contains `matlab.exe`, e.g. `D:\Program Files\MATLAB\R2014b\bin`.
 	- Run command: `./matlab.exe /regserver`.
 
+	> Note: it seems that given MATLAB can not both register both x86 & x64 (e.g. can only register MATLAB-2015b-x86 or MATLAB-2015b-x64, but not both). On the other hand, if we do want both x86 and x64 modes, we can install one MATLAB for one mode and one for another, e.g. MATLAB-2015b-x86 and MATLAB-2014b-x64.
+
 2. Try to close the previous MATLAB window first (extra command window) if stuck at `engOpen(NULL)`.
 
 [^1]: `engOpen()` always returns 0: http://www.mathworks.com/matlabcentral/newsreader/view_thread/238828
