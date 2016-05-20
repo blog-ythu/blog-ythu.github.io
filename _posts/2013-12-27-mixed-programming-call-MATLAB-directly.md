@@ -49,4 +49,11 @@ This blog will focus on the second approach (also the easier one).
     - RGB image
 
 ## Other Remarks:
-- Try to close the previous MATLAB window first (extra command window) if stuck at `engOpen(NULL)`.
+1. If `engOpen(NULL)` always returns `0` or `NULL`, you should register MATLAB first by[^1]
+	- Run DOS in admin mode.
+	- In DOS, go to MATLAB install folder that contains `matlab.exe`, e.g. `D:\Program Files\MATLAB\R2014b\bin`.
+	- Run command: `./matlab.exe /regserver`.
+
+2. Try to close the previous MATLAB window first (extra command window) if stuck at `engOpen(NULL)`.
+
+[^1]: `engOpen()` always returns 0: http://www.mathworks.com/matlabcentral/newsreader/view_thread/238828
