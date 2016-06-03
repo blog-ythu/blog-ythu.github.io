@@ -12,17 +12,16 @@ mathjax: true
 
 ## Text
 - [**Atom**](https://atom.io/): advanced editor for structured code, w/ plugins like
-  - **minimap**: preview enabled scroll bar
-  - **hightlight-line**: highlight current line
-  - **hightlight-selected**: highlight selected word when double clicking
+    - **minimap**: preview enabled scroll bar
+    - **hightlight-line**: highlight current line
+    - **hightlight-selected**: highlight selected word when double clicking
 - [**CTeX**](http://www.ctex.org/CTeXDownload): LaTex editing
 - [**Haroopad**](http://pad.haroopress.com/user.html): markdown editor, powerful syntax, good for blog posting
 - [**Notepad++**](http://notepad-plus-plus.org/download): advanced text editor
 - [**Typora**](https://www.typora.io/#windows): markdown editor with seamless live preview (WYSIWYG)
 - [**Windows Live Writer**](http://www.microsoft.com/en-us/download/details.aspx?id=8621): blogger editor, including wonderful plug-ins
-  - [Paste As Visual Studio Code](http://www.lavernockenterprises.co.uk/downloads/pasteasvisualstudiocode/pasteasvisualstudiocode.aspx) [[offline](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-PasteAsVisualStudioCode1.8.0.0.msi)]: syntax highlight by pasting from VS
-  - [Horizontal Line Plugin](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-HorizontalLine.zip): easy to add a horizontal line
-
+    - [Paste As Visual Studio Code](http://www.lavernockenterprises.co.uk/downloads/pasteasvisualstudiocode/pasteasvisualstudiocode.aspx) [[offline](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-PasteAsVisualStudioCode1.8.0.0.msi)]: syntax highlight by pasting from VS
+    - [Horizontal Line Plugin](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-HorizontalLine.zip): easy to add a horizontal line
 
 ## File
 - [**Agent Ransack**](http://www.mythicsoft.com/agentransack/download): fast content search in files
@@ -52,33 +51,34 @@ mathjax: true
 - [**XnView**](http://www.xnview.com/en/xnview/): image viewer
 
 ## Coding
+- [**Dependency Walker**](http://www.dependencywalker.com/): track dependent dlls, good for exporting cross-platform apps
 - **Matlab Plugins**:
-  - [export_fig](http://www.mathworks.com/matlabcentral/fileexchange/23629-exportfig): exports figures nicely to a number of vector & bitmap formats
-  - [mmread](http://www.mathworks.com/matlabcentral/fileexchange/8028-mmread): read virtually any media file in Windows, Linux, or Mac
+    - [export_fig](http://www.mathworks.com/matlabcentral/fileexchange/23629-exportfig): exports figures nicely to a number of vector & bitmap formats
+    - [mmread](http://www.mathworks.com/matlabcentral/fileexchange/8028-mmread): read virtually any media file in Windows, Linux, or Mac
 - [**SourceTree**](http://www.sourcetreeapp.com/): Git & Mercurial client
 - [**TortoiseHg**](http://tortoisehg.bitbucket.org/download/): Mercurial/Hg revision control client
-  - [Pageant](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html): SSH key server
+    - [Pageant](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html): SSH key server
 - [**TortoiseSVN**](http://tortoisesvn.net/downloads.html): SVN repo browser, check out...
 - **Visual Studio Extensions**:
-  - **C# outline**: add braces {} outlining for C#
-  - **Code alignment**: format code vertically
-  - **Code Compare**: code comparison and automatic merging
-  - **Image Watch**: watch window for viewing in-memory OpenCV images
-  - **Indent Guides**: display indent and page width guides
-  - **Productivity Power Tools**: code structure visualizer (better disabled as conflict with Indent Guides), scrollbar markers, double-click to maximize windows, ctrl + click to peek definition, show matched margin, color printing
-  - **ReSharper**: to-do explorer, color picker in C#/WPF, unit testing
-  - **Visual Assist X**: navigate, refactor, generate code, coding assistance
-  - **VSCommands**: main menu enhancements, code block end tagger, build assistance, output window enhancement
+    - **C# outline**: add braces {} outlining for C#
+    - **Code alignment**: format code vertically
+    - **Code Compare**: code comparison and automatic merging
+    - **Image Watch**: watch window for viewing in-memory OpenCV images
+    - **Indent Guides**: display indent and page width guides
+    - **Productivity Power Tools**: code structure visualizer (better disabled as conflict with Indent Guides), scrollbar markers, double-click to maximize windows, ctrl + click to peek definition, show matched margin, color printing
+    - **ReSharper**: to-do explorer, color picker in C#/WPF, unit testing
+    - **Visual Assist X**: navigate, refactor, generate code, coding assistance
+    - **VSCommands**: main menu enhancements, code block end tagger, build assistance, output window enhancement
 
 ## Misc
 - [**BingDict**](http://bing.msn.cn/dict/desktop/): Chinese/English Dictionary
 - **Camtasia Studio**: screen recording
 - **Chrome Plugins**:
-  - [AdBlock](https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom): Ads blocking
-  - [Checker Plus for Gmail](https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj): email checking
-  - [Linkclump](https://chrome.google.com/webstore/detail/linkclump/lfpjkncokllnfokkgpkobnkbkmelfefj): roi links copying/openning (can be self-defined)
-  - [Remove cookies for site](https://chrome.google.com/webstore/detail/remove-cookies-for-site/lmfdblomdpkcniknaenceeogpgepocmm): remove cookies for given site
-  - [Webmail Ad Blocker](https://chrome.google.com/webstore/detail/webmail-ad-blocker/cbhfdchmklhpcngcgjmpdbjakdggkkjp): Ads blocking for webmails
+    - [AdBlock](https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom): Ads blocking
+    - [Checker Plus for Gmail](https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj): email checking
+    - [Linkclump](https://chrome.google.com/webstore/detail/linkclump/lfpjkncokllnfokkgpkobnkbkmelfefj): roi links copying/openning (can be self-defined)
+    - [Remove cookies for site](https://chrome.google.com/webstore/detail/remove-cookies-for-site/lmfdblomdpkcniknaenceeogpgepocmm): remove cookies for given site
+    - [Webmail Ad Blocker](https://chrome.google.com/webstore/detail/webmail-ad-blocker/cbhfdchmklhpcngcgjmpdbjakdggkkjp): Ads blocking for webmails
 - **DVD Decrypter**: extract data from DVD
 - **Duck Capture**: screenshot, good to capture whole webpage (multi-page)
 - [**FileZilla**](https://filezilla-project.org/): ftp connect client
