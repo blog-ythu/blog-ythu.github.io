@@ -12,9 +12,10 @@ mathjax: true
 
 ## Text
 - [**Atom**](https://atom.io/): advanced editor for structured code, w/ plugins like
-    - **minimap**: preview enabled scroll bar
-    - **hightlight-line**: highlight current line
-    - **hightlight-selected**: highlight selected word when double clicking
+    - minimap: preview enabled scroll bar
+    - hightlight-line: highlight current line
+    - hightlight-selected: highlight selected word when double clicking
+    - markdown-preview-enhanced: markdown live preview, support auto-render, 2-way scroll sync, math, toc...
 - [**CTeX**](http://www.ctex.org/CTeXDownload): LaTex editing
 - [**Haroopad**](http://pad.haroopress.com/user.html): markdown editor, powerful syntax, good for blog posting
 - [**Notepad++**](http://notepad-plus-plus.org/download): advanced text editor
