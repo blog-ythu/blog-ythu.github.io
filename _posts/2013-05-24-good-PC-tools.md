@@ -10,7 +10,7 @@ mathjax: true
 <!-- add TOC here -->
 <div id="genTocHere"></div>
 
-# Text
+## Text
 - [**Atom**](https://atom.io/): advanced editor for structured code, w/ plugins like
   - **minimap**: preview enabled scroll bar
   - **hightlight-line**: highlight current line
@@ -24,16 +24,16 @@ mathjax: true
   - [Horizontal Line Plugin](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-HorizontalLine.zip): easy to add a horizontal line
 
 
-# File
+## File
 - [**Agent Ransack**](http://www.mythicsoft.com/agentransack/download): fast content search in files
-- [****Bulk Rename Utility****](http://www.bulkrenameutility.co.uk/Download.php): batch file and folder renaming
+- [**Bulk Rename Utility**](http://www.bulkrenameutility.co.uk/Download.php): batch file and folder renaming
 - [**Clover**](http://ejie.me/): add multi-tab functionality for Windows Explorer
 - [**Everything**](http://www.voidtools.com/downloads/): fast file search
 - [**FileMenu Tools**](http://www.lopesoft.com/en/filemenutools/download): file/folder right click menus manager
 - [**Listary**](http://www.listary.com/download): file managing/browsing…
 - [**Recuva**](https://www.piriform.com/recuva/download): restore deleted files
 
-# System
+## System
 - [**Disk Tool**](http://www.disktool.cn/feature.html): disk partion management
 - [**DisplayFusion**](http://www.displayfusion.com/Download/): multi-monitor taskbars, title-bar buttons...
 - [**Mouse without Borders**](http://www.microsoft.com/en-hk/download/details.aspx?id=35460): control multiple PCs using single mouse
@@ -41,7 +41,7 @@ mathjax: true
 - [**Rufus**](https://rufus.akeo.ie/): create bootable USB (in case *Windows 7 USB DVD Download Tool* fails)
 - [**UltraMon**](https://www.realtimesoft.com/ultramon/download.asp): multi-toolbars for multi-monitors
 
-# Viewer / Player / Editor
+## Viewer / Player / Editor
 - **Adobe Audition**: real-time multi-channel audio recording & audio editing
 - [**Audacity**](http://audacity.sourceforge.net/download/): audio editing, e.g. cutting, resampling, changing speed…
 - **CorelDRAW**: vector diagram drawing
@@ -51,7 +51,7 @@ mathjax: true
 - [**PotPlayer**](http://potplayer.daum.net/): video player
 - [**XnView**](http://www.xnview.com/en/xnview/): image viewer
 
-# Coding
+## Coding
 - **Matlab Plugins**:
   - [export_fig](http://www.mathworks.com/matlabcentral/fileexchange/23629-exportfig): exports figures nicely to a number of vector & bitmap formats
   - [mmread](http://www.mathworks.com/matlabcentral/fileexchange/8028-mmread): read virtually any media file in Windows, Linux, or Mac
@@ -70,7 +70,7 @@ mathjax: true
   - **Visual Assist X**: navigate, refactor, generate code, coding assistance
   - **VSCommands**: main menu enhancements, code block end tagger, build assistance, output window enhancement
 
-# Misc
+## Misc
 - [**BingDict**](http://bing.msn.cn/dict/desktop/): Chinese/English Dictionary
 - **Camtasia Studio**: screen recording
 - **Chrome Plugins**:
