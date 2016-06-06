@@ -12,17 +12,17 @@ mathjax: true
 
 ## Text
 - [**Atom**](https://atom.io/): advanced editor for structured code, w/ plugins like
-    - minimap: preview enabled scroll bar
-    - hightlight-line: highlight current line
-    - hightlight-selected: highlight selected word when double clicking
-    - markdown-preview-enhanced: markdown live preview, support auto-render, 2-way scroll sync, math, toc...
+    - **minimap**: preview enabled scroll bar
+    - **hightlight-line**: highlight current line
+    - **hightlight-selected**: highlight selected word when double clicking
+    - **markdown-preview-enhanced**: markdown live preview, support auto-render, 2-way scroll sync, math, toc...
 - [**CTeX**](http://www.ctex.org/CTeXDownload): LaTex editing
 - [**Haroopad**](http://pad.haroopress.com/user.html): markdown editor, powerful syntax, good for blog posting
 - [**Notepad++**](http://notepad-plus-plus.org/download): advanced text editor
-- [**Typora**](https://www.typora.io/#windows): markdown editor with seamless live preview (WYSIWYG)
-- [**Windows Live Writer**](http://www.microsoft.com/en-us/download/details.aspx?id=8621): blogger editor, including wonderful plug-ins
-    - [Paste As Visual Studio Code](http://www.lavernockenterprises.co.uk/downloads/pasteasvisualstudiocode/pasteasvisualstudiocode.aspx) [[offline](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-PasteAsVisualStudioCode1.8.0.0.msi)]: syntax highlight by pasting from VS
-    - [Horizontal Line Plugin](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-HorizontalLine.zip): easy to add a horizontal line
+- ~~[**Typora**](https://www.typora.io/#windows): markdown editor with seamless live preview (WYSIWYG)~~
+- ~~[**Windows Live Writer**](http://www.microsoft.com/en-us/download/details.aspx?id=8621): blogger editor, including wonderful plug-ins~~
+    - ~~[Paste As Visual Studio Code](http://www.lavernockenterprises.co.uk/downloads/pasteasvisualstudiocode/pasteasvisualstudiocode.aspx) [[offline](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-PasteAsVisualStudioCode1.8.0.0.msi)]: syntax highlight by pasting from VS~~
+    - ~~[Horizontal Line Plugin](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-HorizontalLine.zip): easy to add a horizontal line~~
 
 ## File
 - [**Agent Ransack**](http://www.mythicsoft.com/agentransack/download): fast content search in files
