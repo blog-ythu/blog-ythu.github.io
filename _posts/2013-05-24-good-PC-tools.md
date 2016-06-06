@@ -89,4 +89,7 @@ mathjax: true
 - **Image Composite Editor**: advanced panoramic image stitcher
 - [**mkvtoolnix**](https://www.bunkus.org/videotools/mkvtoolnix/downloads.html): video processing, e.g. extracting given channel audio from movie…
 - [**TeamViewer**](http://www.teamviewer.com/en/download/windows.aspx): cross-domain remote desktop connector
-- [**WKhtmlTOpdf**](http://wkhtmltopdf.org/downloads.html): convent HTML to PDF with style retained (`wkhtmltopdf.exe www.website.url.com out.pdf`)
+- [**WKhtmlTOpdf**](http://wkhtmltopdf.org/downloads.html): convent HTML to PDF with style retained, using
+  ```dos
+  wkhtmltopdf.exe www.website.url.com out.pdf
+  ```
