@@ -108,16 +108,16 @@ Note that, if you just want to call them in the same PC or another PC which has 
 4. **Type passing**: Passing C++ native types to `mwArray` in order to call MATLAB
   - When passing a grayscale `Mat` image, can use `mxINT8_CLASS` as follows.
 
-        ```cpp
-        // assume we want to passing Mat img(rows, cols, CV_8UC1)
-        int rows = img.rows;
-        int cols = img.cols;
-        mwArray imgP(rows, cols, mxUINT8_CLASS);
+      ```cpp
+      // assume we want to passing Mat img(rows, cols, CV_8UC1)
+      int rows = img.rows;
+      int cols = img.cols;
+      mwArray imgP(rows, cols, mxUINT8_CLASS);
 
-        // remember to tranpose first because MATLAB is col-major
-        transpose(mat, mat);
-        imgP.SetData(mat.ptr(), rows*cols);
-        ```
+      // remember to tranpose first because MATLAB is col-major
+      transpose(mat, mat);
+      imgP.SetData(mat.ptr(), rows*cols);
+      ```
   - When passing a color `Mat` image (assume in format `CV_RGB`), currently no way is found to pass it directly. Possible way is to pass the r, g, b channels independently and then combine them to be a color image in MATLAB as follows.
 	- In VC++:
 

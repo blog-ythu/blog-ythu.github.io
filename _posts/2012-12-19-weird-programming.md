@@ -12,7 +12,7 @@ mathjax: true
 
 Weird things often occur in programming. We can tell so-called reasons to some of them. For others, the only thing we can do is, how the hell could these be? We have to pay extra attention to avoid these in order not to fall into debugging nightmares.
 
-##10000000000000000 != 10000000000000000 ???
+## 10000000000000000 != 10000000000000000 ???
 ```cpp
 float a = 10000000000000000.0;
 float b = a - 10000000000000000.0;
@@ -34,7 +34,7 @@ When viewing them in Watch under Debug, it turns out:
 
 Reason: discussed in [here](http://stackoverflow.com/questions/18877902/why-is-10000000000000000-10000000000000000).
 
-##215510*10000 != 2155100000 ???
+## 215510*10000 != 2155100000 ???
 ```cpp
 UINT64 time1 = 215510*10000;
 UINT64 time2 = (UINT64)(215510 * 10000);
@@ -57,7 +57,7 @@ UINT64 time5 = (UINT64)215510 * (UINT64)10000;
 
 Reason: discussed in [here](http://stackoverflow.com/questions/20727531/why-is-21551010000-2155100000).
 
-##3 < –1 ???
+## 3 < –1 ???
 ```cpp
 int start = 3;
 

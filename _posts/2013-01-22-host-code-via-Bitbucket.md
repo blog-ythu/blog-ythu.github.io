@@ -15,9 +15,9 @@ Similar to [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/) ma
 ## Setup Bitbucket over Internet
 1. Login `Bitbucket > Repositories > Create repository`.
 2. In the Create a new repository page:
- - **Name**: Fill in the repository name (`testRepo` as an example).
- - **Description**: I will always leave this empty because I prefer to use a `README.text` file instead, which supports [Python-Markdown](http://pypi.python.org/pypi/Markdown) and is much more powerful.
- - ...
+   - **Name**: Fill in the repository name (`testRepo` as an example).
+   - **Description**: I will always leave this empty because I prefer to use a `README.text` file instead, which supports [Python-Markdown](http://pypi.python.org/pypi/Markdown) and is much more powerful.
+   - ...
 
 ## Setup TortoiseHg
 Simple way is to use **SSH keys** and follow setup sets by this post: [Set up SSH for Mercurial](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Mercurial). Key step is to add the following content to `mercurial.ini` (TortoiseHg’s global setting file):
@@ -53,8 +53,8 @@ Note: all you need to do is to loop in step 2~5 for further commits.
 4. **Push**: `Commit > Push outgoing changes to selected URL`.
  Done if no conflict found with server version (e.g. no one pushed new revisions during our editing). If do find conflict, it will shows `abort: push creates new remote head xxxxxxx!` in TortoiseHg.
 5. **Resolve conflicts**:
- - Get latest: `Repository > Synchronize > Pull`.
- - Merge: Right click latest revision by others that is just pulled `> Merge with Local… > Next >` Click `resolved` in current Merge window to resolve conflicts > Click the file (do this one by one) that we need to resolve in `Unresolved conflicts` sub-window and click `Tool Resolve` (assume `KDiff3` has been installed, this will call KDiff3 to compare both versions side by side) > In the `Output` window, right click `?<Merge Conflick> > Select Line(s) from` the version that you want (or both versions) `> Save` and `Close` KDiff3 > `Close` the Resolve Conflicts window > Change Commit message if you need in the `Merge` window `> Commit Now > Finish`.
+   - Get latest: `Repository > Synchronize > Pull`.
+   - Merge: Right click latest revision by others that is just pulled `> Merge with Local… > Next >` Click `resolved` in current Merge window to resolve conflicts > Click the file (do this one by one) that we need to resolve in `Unresolved conflicts` sub-window and click `Tool Resolve` (assume `KDiff3` has been installed, this will call KDiff3 to compare both versions side by side) > In the `Output` window, right click `?<Merge Conflick> > Select Line(s) from` the version that you want (or both versions) `> Save` and `Close` KDiff3 > `Close` the Resolve Conflicts window > Change Commit message if you need in the `Merge` window `> Commit Now > Finish`.
 6. **Push**: Push outgoing changes to selected URL.
 
 ## Other remarks

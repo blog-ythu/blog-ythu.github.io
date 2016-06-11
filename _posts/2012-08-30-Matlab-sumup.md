@@ -16,10 +16,10 @@ imshow('test.jpg');
 rect = getrect;
 ```
 
-##对话框 dialog box
+## 对话框 dialog box
 cc: [matlab GUI之对话框](http://hi.baidu.com/7777777_shu/item/ccb713f20ce99e18d7ff8cda)
 
-##多个string连接
+## 多个string连接
 1. `sprintf`
 
     ```matlab
@@ -31,7 +31,7 @@ cc: [matlab GUI之对话框](http://hi.baidu.com/7777777_shu/item/ccb713f20ce99e
     imgname=strcat(data_pwd,'\\',filearray(i).name);
     ```
 
-##获取文件绝对路径的各个部分 (e.g. 目录path, 文件名, 扩展名)
+## 获取文件绝对路径的各个部分 (e.g. 目录path, 文件名, 扩展名)
 ```matlab
 [pathstr,realname,ext] = fileparts('C:\\images\\test.bmp');
 ```
@@ -44,7 +44,7 @@ realname = 'test'
 ext = '.bmp'
 ```
 
-##UI获取文件名和文件夹
+## UI获取文件名和文件夹
 
 - 文件
 
@@ -58,7 +58,7 @@ ext = '.bmp'
     output_images_folder = uigetdir(pwd, 'Select the FOLDER where to save images...')
     ```
 
-##遍历文件夹内所有(指定类型)文件
+## 遍历文件夹内所有(指定类型)文件
 ```matlab
 data_pwd = uigetdir;
 file_temp = sprintf('%s\\*.%s', data_pwd, input_type);
@@ -70,13 +70,13 @@ for i=1:1:s
 end
 ```
 
-##获取image的长, 宽和channel数
+## 获取image的长, 宽和channel数
 ```matlab
 img = imread('C:\Users\tommyhu\Desktop\test\frame_0000.bmp');
 [h, w, c] = size(img);
 ```
 
-##遍历video的每一帧
+## 遍历video的每一帧
 ```matlab
 mov = VideoReader(video_file_name);
 for i=1:1:mov.numberofframes
@@ -85,7 +85,7 @@ for i=1:1:mov.numberofframes
 end
 ```
 
-##获取用户输入
+## 获取用户输入
 - 命令行方式
 
     ```matlab
@@ -94,19 +94,19 @@ end
 - UI方式
 
     ```matlab
-        prompt = { 'from:','to:','step'};
-        dlg_title = 'choose images';
-        num_lines = [4 1 3]; % can be a scaler number that applies to all
-        defAns = {'0', '', '1'};
-        options = 'on'; % enable to resize window
-        answer = inputdlg(prompt,dlg_title,num_lines,defAns);
+    prompt = { 'from:','to:','step'};
+    dlg_title = 'choose images';
+    num_lines = [4 1 3]; % can be a scaler number that applies to all
+    defAns = {'0', '', '1'};
+    options = 'on'; % enable to resize window
+    answer = inputdlg(prompt,dlg_title,num_lines,defAns);
 
-        from=str2num(cell2mat(answer(1)));
-        to=str2num(cell2mat(answer(2)));
-        stepsize=str2num(cell2mat(answer(3)));
+    from=str2num(cell2mat(answer(1)));
+    to=str2num(cell2mat(answer(2)));
+    stepsize=str2num(cell2mat(answer(3)));
     ```
 
-##输出到txt
+## 输出到txt
 ```matlab
 fileID = fopen('faces.txt', 'w');
 fprintf(fileID,'[%4.2f,%d,%d,%d]\n', x, y, z, t);

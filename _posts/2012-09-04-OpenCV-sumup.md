@@ -43,12 +43,12 @@ mathjax: true
 
 ## Access pixel intensity values of images
 1. **`Mat`** (e.g. `Mat img`)
- - **Grayscale** (`8UC1`)
+   - **Grayscale** (`8UC1`)
 
         ```cpp
         uchar intensity = img.at<uchar>(y, x);
         ```
- - **Color image** (**BGR** color ordering, the default format returned by `imread`)
+   - **Color image** (**BGR** color ordering, the default format returned by `imread`)
 
         ```cpp
         Vec3b intensity = img.at<Vec3b>(y, x);
@@ -56,14 +56,14 @@ mathjax: true
         uchar green = intensity.val[1];
         uchar red = intensity.val[2];
         ```
- Note: the same method can be used to change pixel intensities.
+   Note: the same method can be used to change pixel intensities.
 2. **`IplImage`** (e.g. `IplImage* img`)
- - **Grayscale**
+   - **Grayscale**
 
         ```cpp
         uchar intensity = CV_IMAGE_ELEM(img, uchar, h, w);
         ```
- - **Color image**
+   - **Color image**
 
         ```cpp
         uchar blue = CV_IMAGE_ELEM(img, uchar, y, x*3);

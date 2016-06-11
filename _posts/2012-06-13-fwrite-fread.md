@@ -94,7 +94,7 @@ We use `fwrite` to write formated data to disk and use `fread` to later read the
     ```
 
 ## for `vector<Mat>` (every `Mat` have similar data):
-3. `fwrite`:
+1. `fwrite`:
 
     ```cpp
     void write_all_images_content_to_disk(vector<Mat> result, string file, size_t & size_mat)
@@ -156,7 +156,7 @@ struct PERSON
 };
 ```
 
-4. `fwrite`:
+1. `fwrite`:
 
     ```cpp
     void write_struct(string file, PERSON a)
@@ -205,7 +205,7 @@ struct FEATURE_RECT
     Mat region_mat;
 };
 ```
-5. `fwrite`:
+1. `fwrite`:
 
     ```cpp
     void write_struct(string file, FEATURE_RECT a)
