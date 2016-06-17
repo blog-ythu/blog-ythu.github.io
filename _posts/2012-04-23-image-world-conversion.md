@@ -51,23 +51,23 @@ Based on above parameters, we can get:
 
 	$$
 		\begin{cases} \begin{array}{l l}
-			R11 &= cb \cdot cg \\
-			R12 &= cg \cdot sa \cdot sb - ca \cdot sg \\
-			R13 &= sa \cdot sg + ca \cdot cg \cdot sb \\
-			R14 &= tx \\
-			R21 &= cb \cdot sg \\
-			R22 &= sa \cdot sb \cdot sg + ca \cdot cg \\
-			R23 &= ca \cdot sb \cdot sg - cg \cdot sa \\
-			R24 &= ty \\
-			R31 &= -sb \\
-			R32 &= cb \cdot sa \\
-			R33 &= ca \cdot cb \\
-			R34 &= tz \\
-			sa &= \sin(rx) \\
-			ca &= \cos(rx) \\
-			sb &= \sin(ry) \\
-			cb &= \cos(ry) \\
-			sg &= \sin(rz) \\
+			R11 &= cb \cdot cg \\\
+			R12 &= cg \cdot sa \cdot sb - ca \cdot sg \\\
+			R13 &= sa \cdot sg + ca \cdot cg \cdot sb \\\
+			R14 &= tx \\\
+			R21 &= cb \cdot sg \\\
+			R22 &= sa \cdot sb \cdot sg + ca \cdot cg \\\
+			R23 &= ca \cdot sb \cdot sg - cg \cdot sa \\\
+			R24 &= ty \\\
+			R31 &= -sb \\\
+			R32 &= cb \cdot sa \\\
+			R33 &= ca \cdot cb \\\
+			R34 &= tz \\\
+			sa &= \sin(rx) \\\
+			ca &= \cos(rx) \\\
+			sb &= \sin(ry) \\\
+			cb &= \cos(ry) \\\
+			sg &= \sin(rz) \\\
 			cg &= \cos(rz)
 		\end{array} \end{cases}
 	$$
@@ -76,8 +76,8 @@ Based on above parameters, we can get:
 
 	$$
 		\begin{cases} \begin{array}{l l}
-			Cposx &= -( tx \cdot R11 + ty \cdot R21 + tz \cdot R31 ) \\
-			Cposy &= -( tx \cdot R12 + ty \cdot R22 + tz \cdot R32 ) \\
+			Cposx &= -( tx \cdot R11 + ty \cdot R21 + tz \cdot R31 ) \\\
+			Cposy &= -( tx \cdot R12 + ty \cdot R22 + tz \cdot R32 ) \\\
 			Cposz &= -( tx \cdot R13 + ty \cdot R23 + tz \cdot R33 )
 		\end{array} \end{cases}
 	$$
@@ -97,7 +97,7 @@ Meaning: 3D scene point \\((x,y,z) =>\\) 2D image pixel \\((u,v)\\). There need 
 
 	$$
 		\begin{cases} \begin{array}{l l}
-			xu &= \frac{f \cdot xc}{zc} \\
+			xu &= \frac{f \cdot xc}{zc} \\\
 			yu &= \frac{f \cdot yc}{zc}
 		\end{array} \end{cases}
 	$$
@@ -111,8 +111,8 @@ Meaning: 3D scene point \\((x,y,z) =>\\) 2D image pixel \\((u,v)\\). There need 
 
 	$$
 		\begin{cases} \begin{array}{l l}
-			u &= \frac{xd \cdot sx}{dpx} + cx \\
-			v &= \frac{yd}{dpy} + cy
+			u &= \frac{xd \cdot sx}{dpx} + cx \\\
+			v &= \frac{yd}{dpy} + cy \\\
 		\end{array} \end{cases}
 	$$
 
@@ -132,9 +132,9 @@ The idea is that we anti-project to the \\(3D\\) space (See following figure, \\
 
 	$$
 		\begin{cases} \begin{array}{l l}
-			xd1 &= dpx \cdot \frac{u1 - cx1}{sx1} \\
-			yd1 &= dpy \cdot (v1 - cy1) \\
-			xd2 &= dpx \cdot \frac{u2 - cx2}{sx2} \\
+			xd1 &= dpx \cdot \frac{u1 - cx1}{sx1} \\\
+			yd1 &= dpy \cdot (v1 - cy1) \\\
+			xd2 &= dpx \cdot \frac{u2 - cx2}{sx2} \\\
 			yd2 &= dpy \cdot (v2 - cy2)
 		\end{array} \end{cases}
 	$$
@@ -143,9 +143,9 @@ The idea is that we anti-project to the \\(3D\\) space (See following figure, \\
 
 	$$
 		\begin{cases} \begin{array}{l l}
-			xu1 &= xd1 \cdot (1 + kappa11 \cdot (xd1 \cdot xd1 + yd1 \cdot yd1)) \\
-			yu1 &= yd1 \cdot (1 + kappa11 \cdot (xd1 \cdot xd1 + yd1 \cdot yd1)) \\
-			xu2 &= xd2 \cdot (1 + kappa12 \cdot (xd2 \cdot xd2 + yd2 \cdot yd2)) \\
+			xu1 &= xd1 \cdot (1 + kappa11 \cdot (xd1 \cdot xd1 + yd1 \cdot yd1)) \\\
+			yu1 &= yd1 \cdot (1 + kappa11 \cdot (xd1 \cdot xd1 + yd1 \cdot yd1)) \\\
+			xu2 &= xd2 \cdot (1 + kappa12 \cdot (xd2 \cdot xd2 + yd2 \cdot yd2)) \\\
 			yu2 &= yd2 \cdot (1 + kappa12 \cdot (xd2 \cdot xd2 + yd2 \cdot yd2))
 		\end{array} \end{cases}
 	$$
@@ -154,12 +154,12 @@ The idea is that we anti-project to the \\(3D\\) space (See following figure, \\
 
 	$$
 		\begin{cases} \begin{array}{l l}
-			xc1 &= xu1 \\
-			yc1 &= yu1 \\
-			zc1 &= f1 \\
-			xc2 &= xu2 \\
-			yc2 &= yu2 \\
-			zc2 &= f2
+			xc1 &= xu1 \\\
+			yc1 &= yu1 \\\
+			zc1 &= f1 \\\
+			xc2 &= xu2 \\\
+			yc2 &= yu2 \\\
+			zc2 &= f2 \\\
 		\end{array} \end{cases}
 	$$
 
