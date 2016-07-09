@@ -25,7 +25,8 @@ mathjax: true
 - [`class` vs. `struct`](http://stackoverflow.com/a/54596/2589776)
 - [`static_cast` vs. `dynamic_cast` vs. `const_cast` vs. `reinterpret_cast`](http://stackoverflow.com/q/332030/2589776)
 - [`cout double` value with full precision](http://stackoverflow.com/a/22383496/2589776)
-- [Why `cout` works weird for `unsigned char`](http://stackoverflow.com/a/21375753/2589776)?
+- [Why `cout` works weird for `unsigned char`?](http://stackoverflow.com/a/21375753/2589776)
+- [set `cout` precision](http://stackoverflow.com/a/16280182/2589776) (i.e. use `setprecision` for total and `fixed + setprecision` for decimal)
 - [`const` reading](http://stackoverflow.com/a/162615/2589776) | [cvqualifiers](http://stackoverflow.com/a/22419598/2589776) | [`const` correctness](http://www.parashift.com/c++-faq-lite/const-correctness.html) | [The C++ `const` Declaration: Why & How](http://duramecho.com/ComputerInformation/WhyHowCppConst.html) | [`const` member function](http://stackoverflow.com/a/751783/2589776)
 - [get the type of an array element](http://stackoverflow.com/q/22410531/2589776)
 - [set, clear, toggle, and check a single bit](http://stackoverflow.com/a/47990/2589776)
