@@ -119,22 +119,28 @@ Subrepositories allow you to have a standalone repository included within a pare
     ```
 3. Add and commit file `.hgsub` to the main repo. File structure identified by `local_subrepo_path` will be created. E.g. in above example, folder `libs/subrepo` will be created automatically.
 
-If you want to pull all the content of sub-repos to the main repo, follow the steps:
-
-1. Download file [`onsub.py`](https://www.dropbox.com/s/zsx5av6mjeux47b/onsub.py) and put anywhere in PC.
-2. Enable `onsub` extention by adding the following conent to file `-path-to-main-repo-path-/.hg/hgrc`:
-
-    ```ini
-    [extensions]
-    onsub = -path-to-onsub.py-/onsub.py
-    ```
-
-    > Note: File `hgrc` will not be available unless the main repo has been pushed to Web at least once.
-
-3. Run `hg onsub "hg pull -u"` in console[^4].
-
 > Note: You must revert anything done to the sub-repo when pushing changes to the main repo, though you can modify it to fit your needs during development.
 
+Note that, when cloning the main repo, by default, all sub-repos (and their contents) are also cloned. If you only want to download some of the sub-repos (especially useful if the sub-repos are huge in terms of number and size), follow the following steps:
+
+1. Download the main repo from its download page.
+2. In TortoiseHg \\(\rightarrow\\) `File` \\(\rightarrow\\) `New Repository...` \\(\rightarrow\\) browse to the download main folder \\(\rightarrow\\) `Create`.
+3. Check on all files to commit (may need to press commit button twice).
+4. Download sub-repos.
+    - One-by-one:
+        - In `Repository Registry` window \\(\rightarrow\\) click the main repo to expand all its sub-repos \\(\rightarrow\\) double click the sub-repo needed to download \\(\rightarrow\\) click `Pull` button.
+    - Batch style:
+        0. Download file [`onsub.py`](https://www.dropbox.com/s/zsx5av6mjeux47b/onsub.py) and put anywhere on your PC.
+        1. In TortoiseHg \\(\rightarrow\\) right click the main repo \\(\rightarrow\\) on the main repo's repository setting window \\(\rightarrow\\) click `Edit File` \\(\rightarrow\\) add the following content to the opened file (i.e. `hgrc` file) and `Save`.
+
+            ```ini
+            [extensions]
+            onsub = -path-to-onsub.py-/onsub.py
+            ```
+
+        2. Edit both files `.hgsub` and `.hgsubstate` to keep only the lines for the sub-repos that you want to download.
+        3. Run `hg onsub "hg pull -u"` in console[^4].
+        4. *(optional)* If you want to download given commit of one sub-repo, after the above steps, go to the sub-repo that you want to edit and update to the commit you want.
 
 [^1]: Link to most-recent version of static file: https://bitbucket.org/site/master/issue/3769/link-to-most-recent-version-of-static-file.
 [^2]: Delete all local changesets and revert to tree: http://stackoverflow.com/a/2143711/2589776.
