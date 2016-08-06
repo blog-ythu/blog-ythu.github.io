@@ -137,7 +137,6 @@ Note that, when cloning the main repo, by default, all sub-repos (and their cont
             [extensions]
             onsub = -path-to-onsub.py-/onsub.py
             ```
-
         2. Edit both files `.hgsub` and `.hgsubstate` to keep only the lines for the sub-repos that you want to download.
         3. Run `hg onsub "hg pull -u"` in console[^4].
         4. *(optional)* If you want to download given commit of one sub-repo, after the above steps, go to the sub-repo that you want to edit and update to the commit you want.
