@@ -72,6 +72,12 @@ To group source files in VS (e.g. put given source files into new folder under V
 - `source_group(<name> FILES <src>...)` (use `${SOURCES}` for  files list defined earlier), or
 - `source_group(<name> REGULAR_EXPRESSION <regex>)` (e.g. use `.*..*` for normal `*.*`)
 
+### Group projects
+```cmake
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+set_target_properties(ProjectName PROPERTIES FOLDER FolderA/FolderB)
+```
+
 ### Different libs for Debug/Release
 ```cmake
 target_link_libraries(testProj
