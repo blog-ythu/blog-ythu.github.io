@@ -35,8 +35,10 @@ mathjax: true
 - [**Recuva**](https://www.piriform.com/recuva/download): restore deleted files
 
 ## System
-- [**Disk Tool**](http://www.disktool.cn/feature.html): disk partion management
+- [**AdwCleaner**](https://toolslib.net/downloads/viewdownload/1-adwcleaner/): remove toolbars and hijackers
+- [**Disk Tool**](http://www.disktool.cn/feature.html): disk partition management
 - [**DisplayFusion**](http://www.displayfusion.com/Download/): multi-monitor taskbars, title-bar buttons...
+- **EaseUS Partition Master**: disk partition management, good for converting dynamic disks to basic mode
 - [**Mouse without Borders**](http://www.microsoft.com/en-hk/download/details.aspx?id=35460): control multiple PCs using single mouse
 - [**Rapid Environment Editor**](http://www.rapidee.com/en/download): environment variables management
 - [**Rufus**](https://rufus.akeo.ie/): create bootable USB (in case *Windows 7 USB DVD Download Tool* fails)
