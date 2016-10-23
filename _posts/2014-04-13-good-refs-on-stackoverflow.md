@@ -15,7 +15,7 @@ mathjax: true
 - [cannot declare functions inside `struct`](http://stackoverflow.com/a/21950708/2589776)
 
 ## C++
-- string literal
+- *String literal*
 	- [`char *str="string";` vs. `char str[]="string";`](http://stackoverflow.com/a/164229/2589776)
 	- [life-time of string literal](http://stackoverflow.com/a/24760066/2589776) [[2](http://stackoverflow.com/q/9970295/2589776)]
 	- [adjacent string literals are concatenated in translation phase 6](http://stackoverflow.com/a/24804277/2589776)
@@ -36,19 +36,23 @@ mathjax: true
 - [copy files (for all types/without knowing types)](http://stackoverflow.com/q/10195343/2589776)
 
 ## OpenCV
-- [setup in VS](http://www.anlak.com/2012/10/using-opencv-2-4-x-with-visual-studio-2010-tutorial.html)
-- [missing dll issues](http://stackoverflow.com/a/20730585/2589776)
-- [automatic memory management (e.g. `Mat`)](http://stackoverflow.com/a/23486280/2589776)
-- [`waitKey()`](http://stackoverflow.com/a/21336627/2589776)
-- [`imwrite()` supported types](http://stackoverflow.com/a/21421342/2589776)
-- comma-separated initializer for `Mat`: `Mat mat = (Mat_<float>(2,3) << 1, 2, 3, 4, 5, 6);`
-- [apply function to each image pixel](http://stackoverflow.com/a/22329736/2589776)
-- [set all `Mat` values at given channel to given value](http://stackoverflow.com/q/23510571/2589776)
-- [set `Mat` values given condition](http://stackoverflow.com/a/23573442/2589776)
-- [convertion from `Mat` to `vector`](http://stackoverflow.com/a/26685567/2589776)
-- [create rotated rectangular or polygonal ROI/mask](http://stackoverflow.com/a/30828747/2589776)
-- [`kmeans()` on color images (per pixel [RGB] as a sample)](http://stackoverflow.com/a/11412325/2589776)
-- [HOG feature](http://stackoverflow.com/a/22374195/2589776) | [`CascadeClassifier::detectMultiScale()` parameters](http://stackoverflow.com/a/20805153/2589776)
+- *Setup*
+	- [setup in VS](http://www.anlak.com/2012/10/using-opencv-2-4-x-with-visual-studio-2010-tutorial.html)
+	- [missing dll issues](http://stackoverflow.com/a/20730585/2589776)
+- *`cv::Mat`*
+	- comma-separated initializer for `Mat`: `Mat mat = (Mat_<float>(2,3) << 1, 2, 3, 4, 5, 6);`
+	- [apply function to each image pixel](http://stackoverflow.com/a/22329736/2589776)
+	- [set all `Mat` values at given channel to given value](http://stackoverflow.com/q/23510571/2589776)
+	- [set `Mat` values given condition](http://stackoverflow.com/a/23573442/2589776)
+	- [convertion from `Mat` to `vector`](http://stackoverflow.com/a/26685567/2589776)
+	- [I/O `Mat` via XML](http://stackoverflow.com/a/17547427/2589776)
+- *Misc*
+	- [automatic memory management (e.g. `Mat`)](http://stackoverflow.com/a/23486280/2589776)
+	- [`waitKey()`](http://stackoverflow.com/a/21336627/2589776)
+	- [`imwrite()` supported types](http://stackoverflow.com/a/21421342/2589776)
+	- [create rotated rectangular or polygonal ROI/mask](http://stackoverflow.com/a/30828747/2589776)
+	- [`kmeans()` on color images (per pixel [RGB] as a sample)](http://stackoverflow.com/a/11412325/2589776)
+	- [HOG feature](http://stackoverflow.com/a/22374195/2589776) | [`CascadeClassifier::detectMultiScale()` parameters](http://stackoverflow.com/a/20805153/2589776)
 
 ## Dos
 - [Rename and move files in batch](http://stackoverflow.com/a/12049845/2589776)
