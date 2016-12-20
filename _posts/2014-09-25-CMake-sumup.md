@@ -136,6 +136,12 @@ add_definitions(-DNO_WARN_MBCS_MFC_DEPRECATION)  # disable MFC deprecation warni
 set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "/wd4819 /wd4996")   # disable warining C4819 and C4996
 ```
 
+### Set SubSystem to "Windows"
+```cmake
+set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS_DEBUG "/SUBSYSTEM:WINDOWS")
+set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS_RELEASE "/SUBSYSTEM:WINDOWS")
+```
+
 ### Enable OpenMP
 ```cmake
 # enable openmp
@@ -145,6 +151,12 @@ if (OPENMP_FOUND)
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 	set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
 endif()
+```
+
+### Use MFC
+```cmake
+add_definitions(-D_AFXDLL)
+set(CMAKE_MFC_FLAG 2)   # 1 for static MFC lib, 2 for shared
 ```
 
 ### Copy files
