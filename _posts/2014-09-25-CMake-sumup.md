@@ -136,6 +136,14 @@ add_definitions(-DNO_WARN_MBCS_MFC_DEPRECATION)  # disable MFC deprecation warni
 set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "/wd4819 /wd4996")   # disable warining C4819 and C4996
 ```
 
+### Set compiler options
+```cmake
+# set compiler options
+add_definitions("-D_CONSOLE -DUNICODE -D_UNICODE")   # set for both debug and release
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /Gm /RTC1 /MTd /ZI /TP")    # set only for debug mode
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Oi -GL -MT -Gy -Zi")   # set only for release mode
+```
+
 ### Set SubSystem to "Windows"
 ```cmake
 set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS_DEBUG "/SUBSYSTEM:WINDOWS")
