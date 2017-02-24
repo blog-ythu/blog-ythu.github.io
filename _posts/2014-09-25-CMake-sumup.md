@@ -137,11 +137,14 @@ set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "/wd4819 /wd4996"
 ```
 
 ### Set compiler options
+> Note: `/Gm` is equivalent to `-Gm`, similar for all others.
+
 ```cmake
 # set compiler options
-add_definitions("-D_CONSOLE -DUNICODE -D_UNICODE")   # set for both debug and release
+set(CMAKE_MFC_FLAG 1)   # use static MFC: 1 for static MFC lib, 2 for shared
+add_definitions("/D_CONSOLE /DUNICODE /D_UNICODE")   # set for both debug and release
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /Gm /RTC1 /MTd /ZI /TP")    # set only for debug mode
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Oi -GL -MT -Gy -Zi")   # set only for release mode
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /Oi /GL /MT /Gy /Zi")   # set only for release mode
 ```
 
 ### Set SubSystem to "Windows"
