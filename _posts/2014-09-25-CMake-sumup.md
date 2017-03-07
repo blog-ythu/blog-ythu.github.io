@@ -136,7 +136,7 @@ add_definitions(-DNO_WARN_MBCS_MFC_DEPRECATION)  # disable MFC deprecation warni
 set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "/wd4819 /wd4996")   # disable warining C4819 and C4996
 ```
 
-### Set compiler options
+### Set compiler/linker options
 > Note: `/Gm` is equivalent to `-Gm`, similar for all others.
 
 ```cmake
@@ -145,6 +145,19 @@ set(CMAKE_MFC_FLAG 1)   # use static MFC: 1 for static MFC lib, 2 for shared
 add_definitions("/D_CONSOLE /DUNICODE /D_UNICODE")   # set for both debug and release
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /Gm /RTC1 /MTd /ZI /TP")    # set only for debug mode
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /Oi /GL /MT /Gy /Zi")   # set only for release mode
+```
+
+Similarly, linker flags can be setup via the following macros
+
+```
+CMAKE_EXE_LINKER_FLAGS
+CMAKE_EXE_LINKER_FLAGS_<CONFIG>
+CMAKE_SHARED_LINKER_FLAGS
+CMAKE_SHARED_LINKER_FLAGS_<CONFIG>
+CMAKE_STATIC_LINKER_FLAGS
+CMAKE_STATIC_LINKER_FLAGS_<CONFIG>
+CMAKE_MODULE_LINKER_FLAGS
+CMAKE_MODULE_LINKER_FLAGS_<CONFIG>
 ```
 
 ### Set SubSystem to "Windows"
