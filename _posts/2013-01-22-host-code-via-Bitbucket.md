@@ -20,13 +20,15 @@ Similar to [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/) ma
    - ...
 
 ## Setup TortoiseHg
-Simple way is to use **SSH keys** and follow setup sets by this post: [Set up SSH for Mercurial](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Mercurial). Key step is to add the following content to `mercurial.ini` (TortoiseHg’s global setting file):
+Simple way is to use **SSH keys** and follow setup sets by this post: [Set up SSH for Mercurial](https://codebeamer.com/cb/wiki/32044#section-Windows). One key step is to add the following content to `mercurial.ini` (TortoiseHg’s global setting file):
 
 ```ini
 [ui]
 username = -name-you-want-to-show- <-email-@xxmail.com>
 ssh = "C:\Program Files\TortoiseHg\TortoisePlink.exe" -ssh -2 -batch -C
 ```
+
+Another key step is to generate your private SSH key file using [PuTTYGen](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and copy the key to your online Bitbucket profile.
 
 Note:
 
