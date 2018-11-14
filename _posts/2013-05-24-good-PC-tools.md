@@ -20,10 +20,6 @@ mathjax: true
 - [**CTeX**](http://www.ctex.org/CTeXDownload): LaTex editing
 - [**Haroopad**](http://pad.haroopress.com/user.html): markdown editor, powerful syntax, good for blog posting
 - [**Notepad++**](http://notepad-plus-plus.org/download): advanced text editor
-- ~~[**Typora**](https://www.typora.io/#windows): markdown editor with seamless live preview (WYSIWYG)~~
-- ~~[**Windows Live Writer**](http://www.microsoft.com/en-us/download/details.aspx?id=8621): blogger editor, including wonderful plug-ins~~
-    - ~~[Paste As Visual Studio Code](http://www.lavernockenterprises.co.uk/downloads/pasteasvisualstudiocode/pasteasvisualstudiocode.aspx) [[offline](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-PasteAsVisualStudioCode1.8.0.0.msi)]: syntax highlight by pasting from VS~~
-    - ~~[Horizontal Line Plugin](https://bitbucket.org/herohuyongtao/files/downloads/WindowsLiveWriterPlugin-HorizontalLine.zip): easy to add a horizontal line~~
 
 ## File
 - [**Agent Ransack**](http://www.mythicsoft.com/agentransack/download): fast content search in files
@@ -49,7 +45,7 @@ mathjax: true
 - [**Audacity**](http://audacity.sourceforge.net/download/): audio editing, e.g. cutting, resampling, changing speed…
 - **CorelDRAW**: vector diagram drawing
 - [**DAEMON Tools Lite**](http://www.disk-tools.com/download/daemon): iso files loading…
-- [**HaoZip**](http://haozip.2345.com/Eng/index_en.htm): compress/extract files, batch file renaming
+- [**Bandizip**](https://en.bandisoft.com/bandizip/): compress/extract files
 - [**PDF-XChange Editor**](http://www.tracker-software.com/product/pdf-xchange-editor): pdf viewer and editor
 - [**PotPlayer**](http://potplayer.daum.net/): video player
 - [**XnView**](http://www.xnview.com/en/xnview/): image viewer
