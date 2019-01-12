@@ -118,6 +118,7 @@ Note that, if you just want to call them in the same PC or another PC which has 
       transpose(mat, mat);
       imgP.SetData(mat.ptr(), rows*cols);
       ```
+
   - When passing a color `Mat` image (assume in format `CV_RGB`), currently no way is found to pass it directly. Possible way is to pass the r, g, b channels independently and then combine them to be a color image in MATLAB as follows.
 	- In VC++:
 
@@ -140,6 +141,7 @@ Note that, if you just want to call them in the same PC or another PC which has 
         image_G.SetData(channels[1].ptr(), rows*cols);
         image_B.SetData(channels[2].ptr(), rows*cols);
         ```
+
 	- In MATLAB:
 
         ```matlab
@@ -147,12 +149,14 @@ Note that, if you just want to call them in the same PC or another PC which has 
         image(:,:,2) = image_G;
         image(:,:,3) = image_B;
         ```
+
 	- The way to define the input parameter based on a `string` or `char []` is as follows:
 
         ```cpp
         // ini input parameter: im_path based on string aString or char aString[]
         mwArray im_path(aString.c_str());
         ```
+        
 	- For passing other types, we had better to use double (`mxDOUBLE_CLASS`) instead of int (`mxINT8_CLASS`) even though it actually is a int.
 	- For passing complex values:
 
