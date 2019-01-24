@@ -10,12 +10,13 @@ mathjax: true
 <!-- add TOC here -->
 <div id="genTocHere"></div>
 
-## Setup Python environment in Windows: (using [Anaconda](http://continuum.io/downloads))
+## Setup Python environment in Windows (using [Anaconda](http://continuum.io/downloads))
 1. Download Window's version [Anaconda](http://continuum.io/downloads).
 2. Install (e.g. default to folder `C:\Anaconda`).
 3. Setup python system variable: new a system variable with name `PYTHONPATH` and value `C:\Anaconda\Lib\site-packages`.
 
-## Install external libraries (3 different ways):
+## Install external libraries
+Several different ways
 1. **Install from Anaconda server:**
    - Run **Anaconda Command Prompt** under Anaconda's start menu.
    - To install **py** library, type `conda install py` (You can first type `conda search xxx` to search **xxx** library exist in Anaconda server or not, full list is available by type `conda list`).
@@ -29,7 +30,14 @@ mathjax: true
    - Copy **cy.py** and **cv2.pyd** from folder `C:\Libs\OpenCV-2.3.1\build\python\2.7` to `C:\Anaconda\Lib\site-packages`.
    - Done. Then you can `import cv/cv2` and use e.g. `cv2.imwrite()` in **.py** source code.
 
+4. **Install by downloading WHL file:**[^1]
+    - If `pip` is not installed, install it by running `conda install pip` in Anaconda Command Prompt.
+    - Download corresponding WHL file from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs). 
+    - In Anaconda Command Prompt, run `pip install xxxxxxxx.whl`.
+
 ## Run Python
 1. Run **Anaconda Command Prompt** under Anaconda's start menu.
 2. Change to the folder that contains the Python file that you want (assume **xxx.py**) to run.
 3. Run: `> python xxx.py`.
+
+[^1]: Install libs in Anaconda: https://stackoverflow.com/a/43190144/2589776
