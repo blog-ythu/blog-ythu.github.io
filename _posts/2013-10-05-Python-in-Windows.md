@@ -19,7 +19,7 @@ mathjax: true
 Several different ways
 1. **Install from Anaconda server:**
    - Run **Anaconda Command Prompt** under Anaconda's start menu.
-   - To install **py** library, type `conda install py` (You can first type `conda search xxx` to search **xxx** library exist in Anaconda server or not, full list is available by type `conda list`).
+   - To install **py** library, type `conda install py` (You can first type `conda search xxx` to search **xxx** library exist in Anaconda server or not, full list is available by type `conda list`; or simply check [Anaconda cloud](https://anaconda.org/) with specific install instructions).
 2. **Install from external libraries directly:** (Take [**protobuf**](https://code.google.com/p/protobuf/) as an example in `C:\Libs\protobuf-2.4.1`)
    - Run **Anaconda Command Prompt** under Anaconda's start menu.
    - cd to protobuf's folder: `C:\Libs\protobuf-2.4.1\python`.
