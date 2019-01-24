@@ -106,4 +106,5 @@ mathjax: true
 ## Filtering
 - Bilateral Filtering: [14 PAMI - Hardware-Efficient Bilateral Filtering for Stereo Matching](http://www.cs.cityu.edu.hk/~qiyang/publications/hebf/) (integrated)
 
+---
 [^1]: Source page of SYSU: http://gitl.sysu.edu.cn/downloads.

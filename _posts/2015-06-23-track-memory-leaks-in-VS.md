@@ -79,4 +79,5 @@ Note that:
 1. **The second part of the memory leak report that contains file names and line numbers is only available after the whole application exits**.
 2. To track memory leaks before application exit, we have to set starting and ending points in code, as we did in the above example. By moving the starting and ending points around, it is flexible for us to track the exact code that we're focused on. Sample memory leak report can be seen from the first part of above report.
 
+---
 [^1]: Finding Memory Leaks Using the CRT Library: https://msdn.microsoft.com/en-us/library/x98tx3cf.aspx

@@ -58,4 +58,5 @@ This blog will focus on the second approach (also the easier one).
 
 2. Try to close the previous MATLAB window first (extra command window) if stuck at `engOpen(NULL)`.
 
+---
 [^1]: `engOpen()` always returns 0: http://www.mathworks.com/matlabcentral/newsreader/view_thread/238828

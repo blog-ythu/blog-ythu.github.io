@@ -40,4 +40,5 @@ Several different ways
 2. Change to the folder that contains the Python file that you want (assume **xxx.py**) to run.
 3. Run: `> python xxx.py`.
 
+---
 [^1]: Install libs in Anaconda: https://stackoverflow.com/a/43190144/2589776

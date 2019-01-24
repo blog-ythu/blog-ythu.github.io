@@ -143,6 +143,7 @@ Note that, when cloning the main repo, by default, all sub-repos (and their cont
         3. Run `hg onsub "hg pull -u"` in console[^4].
         4. *(optional)* If you want to download given commit of one sub-repo, after the above steps, go to the sub-repo that you want to edit and update to the commit you want.
 
+---
 [^1]: Link to most-recent version of static file: https://bitbucket.org/site/master/issue/3769/link-to-most-recent-version-of-static-file.
 [^2]: Delete all local changesets and revert to tree: http://stackoverflow.com/a/2143711/2589776.
 [^3]: Getting Started With Mercurial Subrepositories: https://tomtech999.wordpress.com/2011/12/17/getting-started-with-mercurial-subrepositories/.
