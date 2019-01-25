@@ -30,10 +30,10 @@ Several different ways
    - Copy **cy.py** and **cv2.pyd** from folder `C:\Libs\OpenCV-2.3.1\build\python\2.7` to `C:\Anaconda\Lib\site-packages`.
    - Done. Then you can `import cv/cv2` and use e.g. `cv2.imwrite()` in **.py** source code.
 
-4. **Install by downloading WHL file:**[^1]
+4. **Install via pip:**[^1]
     - If `pip` is not installed, install it by running `conda install pip` in Anaconda Command Prompt.
-    - Download corresponding WHL file from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs). 
-    - In Anaconda Command Prompt, run `pip install xxxxxxxx.whl`.
+    - Try `pip install xxxxxxxx` in Anaconda Command Prompt.
+    - If previous `pip` failed, download corresponding WHL file from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs), and run `pip install xxxxxxxx.whl`.
 
 ## Run Python
 1. Run **Anaconda Command Prompt** under Anaconda's start menu.
