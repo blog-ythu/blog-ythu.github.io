@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "MATLAB/C++ Mixed Programming: call MATLAB directly in VC++"
 excerpt: "Another method for MATLAB/C++ Mixed Programming by calling MATLAB directly in VC++."
 date: 2013-12-27 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2013/12/27/MATLAB-C-Mixed-Programming-call-MATLAB-directly-in-VC/
 ---
 
 There are two ways in VC++ to call MATLAB:

@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Good PC tools"
 excerpt: "A list of good PC tools/softwares/extensions to make life much easier. :)"
 date: 2013-05-24 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2013/05/24/Good-PC-tools/
 ---
 
 <!-- add TOC here -->

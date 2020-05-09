@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "OpenCV sumup"
 excerpt: "Useful OpenCV knowledge points."
 date: 2012-09-04 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2012/09/04/OpenCV-sumup/
 ---
 
 <!-- add TOC here -->

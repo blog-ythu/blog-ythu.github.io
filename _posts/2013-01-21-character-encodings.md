@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Character encodings of text files"
 excerpt: ""
 date: 2013-01-21 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2013/01/21/Character-encodings-of-text-files/
 ---
 
 <!-- add TOC here -->

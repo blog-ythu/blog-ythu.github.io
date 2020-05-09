@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Research Topics Related Useful Links"
 excerpt: "Representative work summary of research topics."
 date: 2011-11-15 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2011/11/15/Research-Topics-Related-Useful-Links/
 ---
 
 <!-- add TOC here -->

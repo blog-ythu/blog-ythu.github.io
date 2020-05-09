@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Build Boost for x32/x64 VC++ compilers on Windows"
 excerpt: ""
 date: 2013-01-02 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2013/01/02/Build-Boost-for-x32-x64-VC-compilers-on-Windows/
 ---
 
 [Boost](http://www.boost.org/) is a set of libraries for the C\++ programming language that provide support for tasks and structures such as linear algebra, pseudorandom number generation, multithreading, image processing, regular expressions, and unit testing. Steps to build Boost for x32/x64 VC\++ compilers on Windows are as follows:

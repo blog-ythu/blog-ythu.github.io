@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "OpenGL sumup"
 excerpt: ""
 date: 2011-10-09 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2011/10/09/OpenGL-sumup/
 ---
 
 <!-- add TOC here -->

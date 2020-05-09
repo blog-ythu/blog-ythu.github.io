@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Debugging: errors and fixes"
 excerpt: "Popular debugging error and fixes."
 date: 2012-09-06 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2012/09/06/Debugging-errors-and-fixes/
 ---
 
 <!-- add TOC here -->

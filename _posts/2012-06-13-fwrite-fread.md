@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "fwrite/fread for different data types"
 excerpt: "fwrite/fread for complex types, e.g. cv::Mat, struct etc."
 date: 2012-06-13 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2012/06/13/fwrite-fread-for-different-data-types/
 ---
 
 <!-- add TOC here -->

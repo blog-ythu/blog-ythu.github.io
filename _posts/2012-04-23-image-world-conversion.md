@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Conversion between image and world coordinates"
 excerpt: "Image coordinates <-> world coordinates."
 date: 2012-04-06 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2012/04/06/Conversion-between-image-and-world-coordinates/
 ---
 
 Conversion between Image Coordinates and World Coordinates are fundamental to all image formation problems. Always confused to me. Sumup here for further references.

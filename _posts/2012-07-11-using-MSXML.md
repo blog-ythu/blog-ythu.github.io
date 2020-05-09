@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Using MSXML to read/write XML files"
 excerpt: ""
 date: 2012-07-11 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2012/07/11/Using-MSXML-to-read-write-XML-files/
 ---
 
 In [previous post](http://blog-ythu.github.io/2012/06/18/using-Libxml2/), I talked about how to use [Libxml2](http://www.xmlsoft.org/) library to read/write xml files. Actually, there are many [Free C or C++ XML Parser Libraries](http://lars.ruoff.free.fr/xmlcpp/). From now no, I will turn to [MSXML](http://msdn.microsoft.com/en-us/library/ms763742.aspx) instead because of Libxml2's poor support for Windows-x64 systems.

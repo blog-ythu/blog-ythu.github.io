@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Good refs on Stack Overflow"
 excerpt: "Stack Overflow - make your code not stack overflow!"
 date: 2014-04-13 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2014/04/13/Good-refs-on-Stack-Overflow/
 ---
 
 <!-- add TOC here -->

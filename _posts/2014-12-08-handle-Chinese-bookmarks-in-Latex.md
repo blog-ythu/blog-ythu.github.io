@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Handle Chinese bookmarks in Latex"
 excerpt: ""
 date: 2014-12-08 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2014/12/08/Handle-Chinese-bookmarks-in-Latex/
 ---
 
 We often encounter problems of showing Chinese bookmarks during using Latex, take the following MWE, i.e. `main.tex` as an example:

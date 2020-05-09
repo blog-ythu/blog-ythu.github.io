@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "MATLAB/C++ Mixed Programming: distribute MATLAB code into independent C++ shared library"
 excerpt: "MATLAB/C++ Mixed Programming by distributing MATLAB code into independent C++ shared library."
 date: 2012-04-29 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2012/04/29/MATLAB-C-Mixed-Programming-distribute-MATLAB-code-into-independent-C-shared-library/
 ---
 
 There are two ways in VC++ to call MATLAB:

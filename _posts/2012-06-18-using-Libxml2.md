@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Using Libxml2 library in VC++"
 excerpt: ""
 date: 2012-06-18 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2012/06/18/Using-Libxml2-library-in-VC/
 ---
 
 [Libxml2](http://www.xmlsoft.org/) is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. We can use it to read/write data from XML data file.

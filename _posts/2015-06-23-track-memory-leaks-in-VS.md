@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Track memory leaks in VS"
 excerpt: "Memory is never enough if facing memory leaks."
 date: 2015-06-23 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2015/06/23/Track-memory-leaks-in-VS/
 ---
 
 In VS, memory leaks can be detected by using C Run-Time (CRT) libraries[^1]. A typical example of enabling this feature can be like:

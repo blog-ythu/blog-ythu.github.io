@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "CMake sumup"
 excerpt: "With CMake, cross-platformed code is so easy."
 date: 2014-09-25 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2014/09/25/CMake-sumup/
 ---
 
 <!-- add TOC here -->

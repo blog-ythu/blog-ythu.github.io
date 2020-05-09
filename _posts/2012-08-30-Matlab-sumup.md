@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "MATLAB sumup"
 excerpt: ""
 date: 2012-08-30 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2012/08/30/MATLAB-sumup/
 ---
 
 <!-- add TOC here -->

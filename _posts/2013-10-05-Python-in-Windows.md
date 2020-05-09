@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: redirect
 comments: true
 title: "Running Python in Windows and install external libraries"
 excerpt: ""
 date: 2013-10-05 11:00:00
 mathjax: true
+redirect: https://blog-tommyhu.github.io/2013/10/05/Running-Python-via-Anaconda/
 ---
 
 <!-- add TOC here -->
